@@ -1,0 +1,113 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/card_dimlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/card_mask_person_icon_imageview_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginVertical="30dp"
+            android:adjustViewBounds="true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/card_mask_horizontal_imageview"
+            app:layout_constraintStart_toStartOf="@id/card_mask_horizontal_imageview"
+            app:layout_constraintTop_toTopOf="@+id/card_mask_horizontal_imageview" />
+
+        <ImageView
+            android:id="@+id/card_mask_person_icon_imageview_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginVertical="30dp"
+            android:adjustViewBounds="true"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/card_mask_horizontal_imageview"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/card_mask_horizontal_imageview"
+            app:layout_constraintTop_toTopOf="@+id/card_mask_horizontal_imageview" />
+
+        <ImageView
+            android:id="@+id/card_mask_horizontal_imageview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="@dimen/cardMaskLayoutMargin"
+            android:contentDescription="@string/description_card_mask"
+            android:elevation="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1.5858:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+        <ImageView
+            android:id="@+id/card_result_imageview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/resultHeight"
+            android:layout_marginStart="@dimen/resultMarginStart"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/button_disable"
+            android:contentDescription="@string/description_face_result_info"
+            android:padding="@dimen/resultPadding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@id/card_result_scrollview"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_mask_horizontal_imageview"
+            app:layout_constraintVertical_bias="1" />
+
+        <ScrollView
+            android:id="@+id/card_result_scrollview"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/resultHeight"
+            android:layout_marginStart="@dimen/resultMarginCenter"
+            android:layout_marginEnd="@dimen/resultMarginStart"
+            android:layout_marginBottom="34dp"
+            android:background="@drawable/button_disable"
+            android:overScrollMode="never"
+            android:scrollbars="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/card_result_imageview"
+            app:layout_constraintTop_toBottomOf="@+id/card_mask_horizontal_imageview"
+            app:layout_constraintVertical_bias="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/resultPaddingHorizontal"
+                android:paddingVertical="17dp">
+
+                <TextView
+                    android:id="@+id/card_result_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/description_face_result_info"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingExtra="@dimen/resultTextMargin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/resultTextSize" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fitsSystemWindows="true"
+    android:orientation="horizontal">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?actionBarSize"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/id_scan_main_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/id_scan_main_title1"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/id_scan_main_title2"
+                android:textColor="@color/white"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:text="@string/id_scan_main_title3"
+                android:textColor="@color/ClovaGreen"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:id="@+id/id_scan_main_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/bg_setting_clovablack"
+            android:paddingHorizontal="30dp"
+            android:paddingVertical="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_scan_main_layout">
+
+
+            <RadioButton
+                android:id="@+id/id_scan_main_radio_all"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/main_radio_selector"
+                android:paddingHorizontal="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/id_scan_all_desc"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/id_scan_error_verify_compare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:paddingStart="30dp"
+                android:text="@string/id_scan_error_compare"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+
+            <RadioButton
+                android:id="@+id/id_scan_main_radio_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:button="@drawable/main_radio_selector"
+                android:paddingHorizontal="10dp"
+                android:text="@string/id_scan_verify_desc"
+                android:textSize="17dp" />
+
+            <RadioButton
+                android:id="@+id/id_scan_main_radio_compare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:button="@drawable/main_radio_selector"
+                android:paddingHorizontal="10dp"
+                android:text="@string/id_scan_compare_desc"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/id_scan_error_compare"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="30dp"
+                android:text="@string/id_scan_error_compare"
+                android:textColor="@color/red"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/ekyc_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="8dp"
+            android:text="@string/id_scan_main_desc"
+            android:textAlignment="center"
+            android:textColor="@color/white_40"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/id_scan_main_radio_group" />
+
+        <LinearLayout
+            android:id="@+id/ekyc_description_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@id/ekyc_description"
+            app:layout_constraintStart_toStartOf="@id/ekyc_description"
+            app:layout_constraintTop_toBottomOf="@id/ekyc_description">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="10dp"
+                android:paddingEnd="10dp"
+                android:src="@drawable/text_dot" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif"
+                android:text="@string/id_scan_sub_desc"
+                android:textAlignment="center"
+                android:textColor="@color/white_40"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/ekyc_button_start"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_enable"
+        android:text="@string/id_scan_btn_start"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

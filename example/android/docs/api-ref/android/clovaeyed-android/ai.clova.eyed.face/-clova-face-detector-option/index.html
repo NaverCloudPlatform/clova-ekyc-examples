@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ClovaFaceDetectorOption</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>clovaeyed-android</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":clovaeyed-android:dokkaNcpHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="clovaeyed-android::ai.clova.eyed.face/ClovaFaceDetectorOption///PointingToDeclaration//165103983">
+  <div class="breadcrumbs"><a href="../../../index.html">clovaeyed-android</a><span class="delimiter">/</span><a href="../index.html">ai.clova.eyed.face</a><span class="delimiter">/</span><span class="current">ClovaFaceDetectorOption</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Clova</span><wbr></wbr><span>Face</span><wbr></wbr><span>Detector</span><wbr></wbr><span><span>Option</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ClovaFaceDetectorOption</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>numberOfThreads<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>enableMeasure<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>motionFrameInterval<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">2</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>stageTypes<span class="token operator">: </span><a href="-stage-types/index.html">ClovaFaceDetectorOption.StageTypes</a><span class="token operator"> = </span>StageTypes()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>detectorOption<span class="token operator">: </span><a href="-detector-option/index.html">ClovaFaceDetectorOption.DetectorOption</a><span class="token operator"> = </span>DetectorOption()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>landmarkOption<span class="token operator">: </span><a href="-landmark-option/index.html">ClovaFaceDetectorOption.LandmarkOption</a><span class="token operator"> = </span>LandmarkOption()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>spoofingOption<span class="token operator">: </span><a href="-spoofing-option/index.html">ClovaFaceDetectorOption.SpoofingOption</a><span class="token operator"> = </span>SpoofingOption()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>faceThreshold<span class="token operator">: </span><a href="-face-threshold/index.html">ClovaFaceDetectorOption.FaceThreshold</a><span class="token operator"> = </span>FaceThreshold()</span></span><span class="token punctuation">)</span></div><p class="paragraph">Options for face detection.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1815500097%2FConstructors%2F165103983" anchor-label="ClovaFaceDetectorOption" id="1815500097%2FConstructors%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-clova-face-detector-option.html"><span>Clova</span><wbr></wbr><span>Face</span><wbr></wbr><span>Detector</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1815500097%2FConstructors%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">numberOfThreads<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span>-1<span class="token punctuation">, </span></span><span class="parameter ">enableMeasure<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">motionFrameInterval<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">2</span><span class="token punctuation">, </span></span><span class="parameter ">stageTypes<span class="token operator">: </span><a href="-stage-types/index.html">ClovaFaceDetectorOption.StageTypes</a><span class="token operator"> = </span>StageTypes()<span class="token punctuation">, </span></span><span class="parameter ">detectorOption<span class="token operator">: </span><a href="-detector-option/index.html">ClovaFaceDetectorOption.DetectorOption</a><span class="token operator"> = </span>DetectorOption()<span class="token punctuation">, </span></span><span class="parameter ">landmarkOption<span class="token operator">: </span><a href="-landmark-option/index.html">ClovaFaceDetectorOption.LandmarkOption</a><span class="token operator"> = </span>LandmarkOption()<span class="token punctuation">, </span></span><span class="parameter ">spoofingOption<span class="token operator">: </span><a href="-spoofing-option/index.html">ClovaFaceDetectorOption.SpoofingOption</a><span class="token operator"> = </span>SpoofingOption()<span class="token punctuation">, </span></span><span class="parameter ">faceThreshold<span class="token operator">: </span><a href="-face-threshold/index.html">ClovaFaceDetectorOption.FaceThreshold</a><span class="token operator"> = </span>FaceThreshold()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Primary constructor for <a href="index.html">ClovaFaceDetectorOption</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1217669431%2FClasslikes%2F165103983" anchor-label="DetectorOption" id="1217669431%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-detector-option/index.html"><span>Detector</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1217669431%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-detector-option/index.html">DetectorOption</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>useFilter<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>boundingBoxThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.7f</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Face detector's option.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1493245758%2FClasslikes%2F165103983" anchor-label="FaceThreshold" id="-1493245758%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-face-threshold/index.html"><span>Face</span><wbr></wbr><span><span>Threshold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1493245758%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-face-threshold/index.html">FaceThreshold</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>eyeOpenThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.15f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>eyeCloseThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.1f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>mouthOpenThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.3f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>mouthCloseThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.1f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>visibilityThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.4f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>pitchThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">18.0f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>rollThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">12.0f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>yawThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">20.0f</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Threshold values of face object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1551148933%2FClasslikes%2F165103983" anchor-label="LandmarkOption" id="1551148933%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-landmark-option/index.html"><span>Landmark</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1551148933%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-landmark-option/index.html">LandmarkOption</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>eyeBlinkDetect<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>support240Contour<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>useFilter<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>adjustBoundingBox<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">true</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Face landmarker's option.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1566389660%2FClasslikes%2F165103983" anchor-label="SpoofingOption" id="-1566389660%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-spoofing-option/index.html"><span>Spoofing</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1566389660%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-spoofing-option/index.html">SpoofingOption</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>spoofPadRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.5f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>spoofThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.1f</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Face spoof classifier's option.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-233451182%2FClasslikes%2F165103983" anchor-label="Stage" id="-233451182%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stage/index.html"><span><span>Stage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-233451182%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stage/index.html">Stage</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>isEnabled<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Pipeline stage information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2105419127%2FClasslikes%2F165103983" anchor-label="StageTypes" id="2105419127%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-stage-types/index.html"><span>Stage</span><wbr></wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2105419127%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-stage-types/index.html">StageTypes</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>detector<span class="token operator">: </span><a href="-stage/index.html">ClovaFaceDetectorOption.Stage</a><span class="token operator"> = </span>Stage()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>landmarker<span class="token operator">: </span><a href="-stage/index.html">ClovaFaceDetectorOption.Stage</a><span class="token operator"> = </span>Stage()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>aligner<span class="token operator">: </span><a href="-stage/index.html">ClovaFaceDetectorOption.Stage</a><span class="token operator"> = </span>Stage()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>maskDetector<span class="token operator">: </span><a href="-stage/index.html">ClovaFaceDetectorOption.Stage</a><span class="token operator"> = </span>Stage()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>spoofingDetector<span class="token operator">: </span><a href="-stage/index.html">ClovaFaceDetectorOption.Stage</a><span class="token operator"> = </span>Stage()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>recognizer<span class="token operator">: </span><a href="-stage/index.html">ClovaFaceDetectorOption.Stage</a><span class="token operator"> = </span>Stage()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>occlusion<span class="token operator">: </span><a href="-stage/index.html">ClovaFaceDetectorOption.Stage</a><span class="token operator"> = </span>Stage()</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Information of stage types for face detection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-272740414%2FProperties%2F165103983" anchor-label="detectorOption" id="-272740414%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="detector-option.html"><span>detector</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-272740414%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="detector-option.html">detectorOption</a><span class="token operator">: </span><a href="-detector-option/index.html">ClovaFaceDetectorOption.DetectorOption</a></div><div class="brief "><p class="paragraph">Face detector's option.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1764375998%2FProperties%2F165103983" anchor-label="enableMeasure" id="-1764375998%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-measure.html"><span>enable</span><wbr></wbr><span><span>Measure</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1764375998%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="enable-measure.html">enableMeasure</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Indicates whether to turn on or off measuring.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-901727889%2FProperties%2F165103983" anchor-label="faceThreshold" id="-901727889%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="face-threshold.html"><span>face</span><wbr></wbr><span><span>Threshold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-901727889%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="face-threshold.html">faceThreshold</a><span class="token operator">: </span><a href="-face-threshold/index.html">ClovaFaceDetectorOption.FaceThreshold</a></div><div class="brief "><p class="paragraph">Threshold values of face object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="60739088%2FProperties%2F165103983" anchor-label="landmarkOption" id="60739088%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="landmark-option.html"><span>landmark</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="60739088%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="landmark-option.html">landmarkOption</a><span class="token operator">: </span><a href="-landmark-option/index.html">ClovaFaceDetectorOption.LandmarkOption</a></div><div class="brief "><p class="paragraph">Face landmarker's option.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1357561215%2FProperties%2F165103983" anchor-label="motionFrameInterval" id="-1357561215%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="motion-frame-interval.html"><span>motion</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Interval</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1357561215%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="motion-frame-interval.html">motionFrameInterval</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Frame interval threshold to detect facial motion.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-73888812%2FProperties%2F165103983" anchor-label="numberOfThreads" id="-73888812%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="number-of-threads.html"><span>number</span><wbr></wbr><span>Of</span><wbr></wbr><span><span>Threads</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-73888812%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="number-of-threads.html">numberOfThreads</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Number of threads to set.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1238167791%2FProperties%2F165103983" anchor-label="spoofingOption" id="1238167791%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="spoofing-option.html"><span>spoofing</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1238167791%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="spoofing-option.html">spoofingOption</a><span class="token operator">: </span><a href="-spoofing-option/index.html">ClovaFaceDetectorOption.SpoofingOption</a></div><div class="brief "><p class="paragraph">Face spoof classifier's option.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-54353022%2FProperties%2F165103983" anchor-label="stageTypes" id="-54353022%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="stage-types.html"><span>stage</span><wbr></wbr><span><span>Types</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-54353022%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="stage-types.html">stageTypes</a><span class="token operator">: </span><a href="-stage-types/index.html">ClovaFaceDetectorOption.StageTypes</a></div><div class="brief "><p class="paragraph">Information of stage types for face detection.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

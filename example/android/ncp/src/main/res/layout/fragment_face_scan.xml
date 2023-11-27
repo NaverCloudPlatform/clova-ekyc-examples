@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/face_scan_preview_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/face_scan_dimlayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/face_scan_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/face_scan_mask_imageview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="56dp"
+            android:layout_marginTop="?actionBarSize"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/face_scan_crop_imageview"
+            app:layout_constraintDimensionRatio="263:344"
+            app:layout_constraintEnd_toEndOf="@id/face_scan_crop_imageview"
+            app:layout_constraintStart_toStartOf="@id/face_scan_crop_imageview"
+            app:layout_constraintTop_toTopOf="@id/face_scan_crop_imageview" />
+
+        <ImageView
+            android:id="@+id/face_scan_boundingbox_imageview"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@id/face_scan_mask_imageview"
+            app:layout_constraintDimensionRatio="1:0.9"
+            app:layout_constraintEnd_toEndOf="@id/face_scan_mask_imageview"
+            app:layout_constraintStart_toStartOf="@id/face_scan_mask_imageview" />
+
+        <TextView
+            android:id="@+id/face_scan_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/face_scan_description"
+            android:textColor="@color/white"
+            android:textSize="@dimen/infoTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/face_scan_mask_imageview" />
+
+        <TextView
+            android:id="@+id/face_scan_count_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="78dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/face_scan_mask_imageview"
+            app:layout_constraintEnd_toEndOf="@id/face_scan_mask_imageview"
+            app:layout_constraintStart_toStartOf="@id/face_scan_mask_imageview"
+            app:layout_constraintTop_toTopOf="@+id/face_scan_mask_imageview" />
+
+
+        <ImageView
+            android:id="@+id/face_scan_crop_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="3:4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/face_scan_shoot_button"
+            android:layout_width="307dp"
+            android:layout_height="58dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_main"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:background="@drawable/icon_shoot_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_shoot"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/face_scan_shoot_animation_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/face_scan_loading_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_70"
+        android:visibility="invisible" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/face_scan_loading_animation"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="EyeD_loading.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

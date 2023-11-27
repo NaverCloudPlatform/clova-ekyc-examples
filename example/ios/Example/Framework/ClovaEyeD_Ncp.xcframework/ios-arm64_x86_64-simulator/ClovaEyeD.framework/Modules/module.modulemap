@@ -1,0 +1,11 @@
+framework module ClovaEyeD {
+  umbrella header "ClovaEyeD.h"
+
+  export *
+  module * { export * }
+}
+
+module ClovaEyeD.Swift {
+  header "ClovaEyeD-Swift.h"
+  requires objc
+}

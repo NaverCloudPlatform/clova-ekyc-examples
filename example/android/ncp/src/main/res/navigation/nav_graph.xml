@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navGraph"
+    app:startDestination="@id/documentLicenseFragment">
+
+    <fragment
+        android:id="@+id/documentLicenseFragment"
+        android:name="ai.clova.eyed.example.fragment.DocumentLicenseFragment"
+        android:label="@string/string_null"
+        tools:layout="@layout/fragment_license_main" />
+
+    <fragment
+        android:id="@+id/compareLicenseFragment"
+        android:name="ai.clova.eyed.example.fragment.CompareLicenseFragment"
+        android:label="@string/string_null"
+        tools:layout="@layout/fragment_license_main" />
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ai.clova.eyed.example.fragment.MainFragment"
+        android:label="@string/string_null"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/ekycMainFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.EkycMainFragment"
+        android:label="@string/string_null"
+        tools:layout="@layout/fragment_ekyc_main" />
+
+    <fragment
+        android:id="@+id/ekycMainSettingsFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.EkycMainSettingsFragment"
+        android:label="@string/string_null"
+        tools:layout="@layout/settings_ekyc_main" />
+
+    <fragment
+        android:id="@+id/idCardFrontFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardScanFrontFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_front"/>
+
+    <fragment
+        android:id="@+id/idCardFrontResultFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardScanFrontResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_front_result"/>
+
+    <fragment
+        android:id="@+id/idCardTiltFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardScanTiltFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_tilt"/>
+
+    <fragment
+        android:id="@+id/idCardTiltResultFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardScanTiltResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_tilt_result"/>
+
+    <fragment
+        android:id="@+id/idCardBackFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardScanBackFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_back"/>
+
+    <fragment
+        android:id="@+id/idCardBackResultFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardScanBackResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_back_result"/>
+
+    <fragment
+        android:id="@+id/idCardIcrResultFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardIcrResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_icr_result"/>
+
+    <fragment
+        android:id="@+id/idCardVerifyResultFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.IdCardVerifyResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_scan_verify_result"/>
+
+    <fragment
+        android:id="@+id/faceScanFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.FaceScanFragment"
+        android:label=""
+        tools:layout="@layout/fragment_face_scan"/>
+
+    <fragment
+        android:id="@+id/faceScanResultFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.FaceScanResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_face_scan_result"/>
+
+    <fragment
+        android:id="@+id/faceScanMotionFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.FaceMotionFragment"
+        android:label=""
+        tools:layout="@layout/fragment_face_motion"/>
+
+    <fragment
+        android:id="@+id/qaMainFragment"
+        android:name="ai.clova.eyed.example.fragment.debug.QaMainFragment"
+        android:label=""
+        tools:layout="@layout/fragment_qa_main"/>
+
+    <fragment
+        android:id="@+id/faceFragment"
+        android:name="ai.clova.eyed.example.fragment.debug.FaceFragment"
+        android:label=""
+        tools:layout="@layout/fragment_face"/>
+
+    <fragment
+        android:id="@+id/faceCompareFragment"
+        android:name="ai.clova.eyed.example.fragment.debug.FaceCompareFragment"
+        android:label=""
+        tools:layout="@layout/fragment_face_compare"/>
+
+    <fragment
+        android:id="@+id/cardFragment"
+        android:name="ai.clova.eyed.example.fragment.debug.CardFragment"
+        android:label=""
+        tools:layout="@layout/fragment_card"/>
+
+    <fragment
+        android:id="@+id/idCardFragment"
+        android:name="ai.clova.eyed.example.fragment.debug.IdCardFragment"
+        android:label=""
+        tools:layout="@layout/fragment_id_card"/>
+
+    <fragment
+        android:id="@+id/faceMotionResultFragment"
+        android:name="ai.clova.eyed.example.fragment.ekyc.FaceMotionResultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_face_motion_result"/>
+</navigation>

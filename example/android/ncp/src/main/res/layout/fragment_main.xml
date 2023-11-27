@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/black"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/mainPaddingHorizontal"
+        android:layout_marginTop="?actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_title"
+            android:layout_marginTop="70dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/main_description"/>
+
+        <TextView
+            android:id="@+id/main_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/fragment_main_description"
+            android:textAlignment="center"
+            android:textColor="@color/main_gray"
+            android:textSize="@dimen/mainButtonTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_title" />
+
+        <Button
+            android:id="@+id/main_ekyc_button"
+            android:layout_width="280dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="45dp"
+            android:background="@drawable/button_main"
+            android:drawableEnd="@drawable/icon_arrow"
+            android:paddingHorizontal="@dimen/mainButtonPaddingHorizontal"
+            android:paddingVertical="@dimen/mainButtonPaddingVertical"
+            android:text="@string/fragment_main_ekyc"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mainButtonTextSize"
+            app:layout_constraintBottom_toTopOf="@id/main_qa_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_description"/>
+
+        <Button
+            android:id="@+id/main_qa_button"
+            android:layout_width="280dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button_main"
+            android:drawableEnd="@drawable/icon_arrow"
+            android:paddingHorizontal="@dimen/mainButtonPaddingHorizontal"
+            android:paddingVertical="@dimen/mainButtonPaddingVertical"
+            android:text="@string/fragment_main_qa"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mainButtonTextSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_ekyc_button"/>
+
+
+        <TextView
+            android:id="@+id/main_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:alpha="0.5"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mainVersionTextSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

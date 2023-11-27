@@ -1,0 +1,143 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name ClovaEyeD
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import ClovaEyeD
+import CoreMedia
+import CryptoKit
+import Foundation
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+extension ClovaEyeD.NcpEkycApiManager {
+  public struct ErrorObject : Swift.Decodable {
+    public let code: Swift.String?
+    public let status: Swift.Int?
+    public let message: Swift.String
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension ClovaEyeD.NcpEkycApiManager {
+  public struct Document : Swift.Decodable {
+    public let meta: ClovaEyeD.NcpEkycApiManager.Document.Meta
+    public var result: ClovaEyeD.NcpEkycApiManager.Document.Result
+    public struct Meta : Swift.Decodable {
+      public let estimatedLanguage: Swift.String
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public struct Result : Swift.Decodable {
+      public let isConfident: Swift.Bool
+      public let idtype: Swift.String
+      public var ic: [Swift.String : [ClovaEyeD.NcpEkycApiManager.Document.Result.BaseObject]]?
+      public var dl: [Swift.String : [ClovaEyeD.NcpEkycApiManager.Document.Result.BaseObject]]?
+      public var pp: [Swift.String : [ClovaEyeD.NcpEkycApiManager.Document.Result.BaseObject]]?
+      public var ac: [Swift.String : [ClovaEyeD.NcpEkycApiManager.Document.Result.BaseObject]]?
+      public struct BaseObject : Swift.Decodable {
+        public var text: Swift.String
+        public let boundingPolys: [ClovaEyeD.NcpEkycApiManager.Document.Result.BaseObject.BoundingPolys]
+        public struct BoundingPolys : Swift.Decodable {
+          public let vertices: [ClovaEyeD.NcpEkycApiManager.Document.Result.BaseObject.Vertices]
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public struct Vertices : Swift.Decodable {
+          public let x: Swift.Double
+          public let y: Swift.Double
+          public init(from decoder: any Swift.Decoder) throws
+        }
+        public init(from decoder: any Swift.Decoder) throws
+      }
+      public init(from decoder: any Swift.Decoder) throws
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension ClovaEyeD.NcpEkycApiManager {
+  public struct Option {
+    public let idCardInvokeUrl: Swift.String
+    public let idCardSecretKey: Swift.String
+    public let faceInvokeUrl: Swift.String
+    public let faceSecretKey: Swift.String
+    public init(idCardInvokeUrl: Swift.String = "", idCardSecretKey: Swift.String = "", faceInvokeUrl: Swift.String = "", faceSecretKey: Swift.String = "")
+  }
+}
+extension ClovaEyeD.ClovaVisionImage {
+  convenience public init?(sampleBuffer: CoreMedia.CMSampleBuffer)
+  convenience public init?(uiImage: UIKit.UIImage)
+}
+extension ClovaEyeD.NcpEkycApiManager {
+  public struct CompareResult : Swift.Decodable {
+    public let requestId: Swift.String
+    public let uid: Swift.String
+    public let timestamp: Swift.Int
+    public let result: ClovaEyeD.NcpEkycApiManager.CompareResult.Result
+    public let message: Swift.String
+    public let similarity: Swift.Double
+    public enum Result : Swift.String, Swift.Decodable {
+      case success
+      case failure
+      case error
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+extension ClovaEyeD.NcpEkycApiManager {
+  public enum ApiError : Swift.Error {
+    case parameterError
+    case invalidServerURL
+    case receiveNoData
+    case networkNotConnect
+    case networkTimeout
+    case failToReceiveData
+    case internalServerError(error: ClovaEyeD.NcpEkycApiManager.ErrorObject)
+    case failToEncodeData
+    case failToDecodeData(data: Foundation.Data)
+    case unknown(rawError: (any Swift.Error)?)
+    public var description: Swift.String {
+      get
+    }
+  }
+}
+extension ClovaEyeD.NcpEkycApiManager {
+  public struct VerifyResult : Swift.Codable {
+    public let requestId: Swift.String
+    public let uid: Swift.String
+    public let timestamp: Swift.Int
+    public let result: ClovaEyeD.NcpEkycApiManager.VerifyResult.Result
+    public let inferType: Swift.String
+    public let inferDetailType: Swift.String
+    public let code: Swift.String?
+    public let message: Swift.String
+    public enum Result : Swift.String, Swift.Codable {
+      case success
+      case failure
+      public init?(rawValue: Swift.String)
+      public typealias RawValue = Swift.String
+      public var rawValue: Swift.String {
+        get
+      }
+    }
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+}
+final public class NcpEkycApiManager {
+  public init(option: ClovaEyeD.NcpEkycApiManager.Option)
+  @objc deinit
+}
+extension ClovaEyeD.NcpEkycApiManager {
+  final public func document(image: UIKit.UIImage, requestId: Swift.String = UUID().uuidString, additionalHeader: [Swift.String : Any] = [:], additionalParameter: [Swift.String : Any] = [:], networkTimeoutMs: Foundation.TimeInterval = 10000, completion: @escaping (Swift.Result<ClovaEyeD.NcpEkycApiManager.Document, ClovaEyeD.NcpEkycApiManager.ApiError>) -> Swift.Void)
+  final public func verify(document: ClovaEyeD.NcpEkycApiManager.Document, additionalHeader: [Swift.String : Any] = [:], additionalParameter: [Swift.String : Any] = [:], networkTimeoutMs: Foundation.TimeInterval = 10000, completion: @escaping (Swift.Result<ClovaEyeD.NcpEkycApiManager.VerifyResult, ClovaEyeD.NcpEkycApiManager.ApiError>) -> Swift.Void)
+  final public func compare(face1: UIKit.UIImage, face2: UIKit.UIImage, requestId: Swift.String = UUID().uuidString, additionalHeader: [Swift.String : Any] = [:], additionalParameter: [Swift.String : Any] = [:], networkTimeoutMs: Foundation.TimeInterval = 10000, completion: @escaping (Swift.Result<ClovaEyeD.NcpEkycApiManager.CompareResult, ClovaEyeD.NcpEkycApiManager.ApiError>) -> Swift.Void)
+}
+extension ClovaEyeD.NcpEkycApiManager.CompareResult.Result : Swift.Equatable {}
+extension ClovaEyeD.NcpEkycApiManager.CompareResult.Result : Swift.Hashable {}
+extension ClovaEyeD.NcpEkycApiManager.CompareResult.Result : Swift.RawRepresentable {}
+extension ClovaEyeD.NcpEkycApiManager.VerifyResult.Result : Swift.Equatable {}
+extension ClovaEyeD.NcpEkycApiManager.VerifyResult.Result : Swift.Hashable {}
+extension ClovaEyeD.NcpEkycApiManager.VerifyResult.Result : Swift.RawRepresentable {}

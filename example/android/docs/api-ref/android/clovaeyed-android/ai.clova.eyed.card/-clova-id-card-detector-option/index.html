@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ClovaIdCardDetectorOption</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>clovaeyed-android</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":clovaeyed-android:dokkaNcpHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="clovaeyed-android::ai.clova.eyed.card/ClovaIdCardDetectorOption///PointingToDeclaration//165103983">
+  <div class="breadcrumbs"><a href="../../../index.html">clovaeyed-android</a><span class="delimiter">/</span><a href="../index.html">ai.clova.eyed.card</a><span class="delimiter">/</span><span class="current">ClovaIdCardDetectorOption</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Clova</span><wbr></wbr><span>Id</span><wbr></wbr><span>Card</span><wbr></wbr><span>Detector</span><wbr></wbr><span><span>Option</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ClovaIdCardDetectorOption</a> <span><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a> </span><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>cardRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">1.5858f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>targetAngle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">90</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>angleOffset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">5</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>minimumSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.65f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>checkSideDetected<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>checkCameraShaky<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>checkImageBlurry<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>checkImageDark<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>checkGlareDetected<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>blurThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.13f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>darkThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">7</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>glarePercentage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>faceLocation<span class="token operator">: </span><a href="-id-face-location/index.html">ClovaIdCardDetectorOption.IdFaceLocation</a><span class="token operator"> = </span>IdFaceLocation.ANY_WHERE<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>accumulatedFrameCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">The container for options of the ClovaIdCardDetector.</p><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>card</span><wbr></wbr><span><span>Ratio</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Target width height ratio of card to detect, default is 1.5858 International Card Ratio (ID-1) (total card area) ROUND (85.60/53.98)</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>target</span><wbr></wbr><span><span>Angle</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Target angle of card to detect, default is 90.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>angle</span><wbr></wbr><span><span>Offset</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Offset of angle to detect, default is 5. targetAngle - angleOffset <= detect range <= targetAngle + angleOffset The possible angle range is 70-110 degrees.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>minimum</span><wbr></wbr><span><span>Size</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The minimum size of a bounding rectangle to detect, as a proportion of the smallest dimension.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>check</span><wbr></wbr><span>Side</span><wbr></wbr><span><span>Detected</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether to detect each side line of the card.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>check</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Shaky</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether to detect camera shaking.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>check</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>Blurry</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether to detect blurry image.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>check</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>Dark</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether to detect dark image.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>check</span><wbr></wbr><span>Glare</span><wbr></wbr><span><span>Detected</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Whether to detect glare image.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>blur</span><wbr></wbr><span><span>Threshold</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Blur judgment threshold.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>dark</span><wbr></wbr><span><span>Threshold</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Dark judgment threshold.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>glare</span><wbr></wbr><span><span>Percentage</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Indicates what percentage of the card area should be occupied by light reflection to determine as an error.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>face</span><wbr></wbr><span><span>Location</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The location of the face in id card.</p></div></div></div></div><div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>accumulated</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Count</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Total number of frames to be accumulated to determine the best id card shot.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-2080993973%2FConstructors%2F165103983" anchor-label="ClovaIdCardDetectorOption" id="-2080993973%2FConstructors%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-clova-id-card-detector-option.html"><span>Clova</span><wbr></wbr><span>Id</span><wbr></wbr><span>Card</span><wbr></wbr><span>Detector</span><wbr></wbr><span><span>Option</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2080993973%2FConstructors%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">cardRatio<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">1.5858f</span><span class="token punctuation">, </span></span><span class="parameter ">targetAngle<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">90</span><span class="token punctuation">, </span></span><span class="parameter ">angleOffset<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">5</span><span class="token punctuation">, </span></span><span class="parameter ">minimumSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.65f</span><span class="token punctuation">, </span></span><span class="parameter ">checkSideDetected<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">checkCameraShaky<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">checkImageBlurry<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">checkImageDark<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">checkGlareDetected<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter ">blurThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.13f</span><span class="token punctuation">, </span></span><span class="parameter ">darkThreshold<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">7</span><span class="token punctuation">, </span></span><span class="parameter ">glarePercentage<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span><span class="token punctuation">, </span></span><span class="parameter ">faceLocation<span class="token operator">: </span><a href="-id-face-location/index.html">ClovaIdCardDetectorOption.IdFaceLocation</a><span class="token operator"> = </span>IdFaceLocation.ANY_WHERE<span class="token punctuation">, </span></span><span class="parameter ">accumulatedFrameCount<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Primary constructor for <a href="index.html">ClovaIdCardDetectorOption</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1847078790%2FClasslikes%2F165103983" anchor-label="IdFaceLocation" id="1847078790%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-id-face-location/index.html"><span>Id</span><wbr></wbr><span>Face</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1847078790%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-id-face-location/index.html">IdFaceLocation</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-id-face-location/index.html">ClovaIdCardDetectorOption.IdFaceLocation</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The location of the face in id card.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1166978824%2FProperties%2F165103983" anchor-label="accumulatedFrameCount" id="-1166978824%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="accumulated-frame-count.html"><span>accumulated</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Count</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1166978824%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="accumulated-frame-count.html">accumulatedFrameCount</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">10</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="365645622%2FProperties%2F165103983" anchor-label="angleOffset" id="365645622%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="angle-offset.html"><span>angle</span><wbr></wbr><span><span>Offset</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="365645622%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="angle-offset.html">angleOffset</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">5</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="492600504%2FProperties%2F165103983" anchor-label="blurThreshold" id="492600504%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="blur-threshold.html"><span>blur</span><wbr></wbr><span><span>Threshold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="492600504%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="blur-threshold.html">blurThreshold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.13f</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1939854593%2FProperties%2F165103983" anchor-label="cardRatio" id="1939854593%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="card-ratio.html"><span>card</span><wbr></wbr><span><span>Ratio</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1939854593%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="card-ratio.html">cardRatio</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">1.5858f</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="365826801%2FProperties%2F165103983" anchor-label="checkCameraShaky" id="365826801%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-camera-shaky.html"><span>check</span><wbr></wbr><span>Camera</span><wbr></wbr><span><span>Shaky</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="365826801%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="check-camera-shaky.html">checkCameraShaky</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1581658059%2FProperties%2F165103983" anchor-label="checkGlareDetected" id="-1581658059%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-glare-detected.html"><span>check</span><wbr></wbr><span>Glare</span><wbr></wbr><span><span>Detected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1581658059%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="check-glare-detected.html">checkGlareDetected</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="101022269%2FProperties%2F165103983" anchor-label="checkImageBlurry" id="101022269%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-image-blurry.html"><span>check</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>Blurry</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="101022269%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="check-image-blurry.html">checkImageBlurry</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="856311861%2FProperties%2F165103983" anchor-label="checkImageDark" id="856311861%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-image-dark.html"><span>check</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>Dark</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="856311861%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="check-image-dark.html">checkImageDark</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1475833477%2FProperties%2F165103983" anchor-label="checkSideDetected" id="-1475833477%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="check-side-detected.html"><span>check</span><wbr></wbr><span>Side</span><wbr></wbr><span><span>Detected</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1475833477%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="check-side-detected.html">checkSideDetected</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-618612729%2FProperties%2F165103983" anchor-label="darkThreshold" id="-618612729%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="dark-threshold.html"><span>dark</span><wbr></wbr><span><span>Threshold</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-618612729%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="dark-threshold.html">darkThreshold</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">7</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1936106156%2FProperties%2F165103983" anchor-label="faceLocation" id="1936106156%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="face-location.html"><span>face</span><wbr></wbr><span><span>Location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1936106156%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="face-location.html">faceLocation</a><span class="token operator">: </span><a href="-id-face-location/index.html">ClovaIdCardDetectorOption.IdFaceLocation</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1172345107%2FProperties%2F165103983" anchor-label="glarePercentage" id="1172345107%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="glare-percentage.html"><span>glare</span><wbr></wbr><span><span>Percentage</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1172345107%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="glare-percentage.html">glarePercentage</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.05f</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="947390829%2FProperties%2F165103983" anchor-label="minimumSize" id="947390829%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="minimum-size.html"><span>minimum</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="947390829%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="minimum-size.html">minimumSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator"> = </span><span class="token constant">0.65f</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="192940090%2FProperties%2F165103983" anchor-label="targetAngle" id="192940090%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="target-angle.html"><span>target</span><wbr></wbr><span><span>Angle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="192940090%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="target-angle.html">targetAngle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">90</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

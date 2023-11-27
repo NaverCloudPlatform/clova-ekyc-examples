@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="colorPrimary">#FF05D686</color>
+	<color name="colorPrimaryDark">#FF05D686</color>
+	<!-- Clova eKYC Colors -->
+
+	<color name="ClovaGreen">#FF06CC80</color>
+
+	<color name="ClovaRed">#FFFE5252</color>
+
+	<color name="ClovaBlue">#FF2284F5</color>
+	<color name="ClovaBlack">#FF212121</color>
+	<color name="ClovaBlack_30">#4D212121</color>
+	<color name="ClovaBlack_70">#B3212121</color>
+
+	<color name="ClovaGray">#FFD8D8D8</color>
+
+	<color name="black">#FF000000</color>
+	<color name="black_90">#E6000000</color>
+	<color name="black_80">#CC000000</color>
+	<color name="black_70">#B3000000</color>
+	<color name="black_60">#99000000</color>
+	<color name="black_50">#80000000</color>
+	<color name="black_40">#66000000</color>
+	<color name="black_30">#4D000000</color>
+	<color name="black_20">#33000000</color>
+	<color name="black_10">#1A000000</color>
+
+	<color name="white">#FFFFFFFF</color>
+	<color name="white_20">#33FFFFFF</color>
+	<color name="white_30">#4DFFFFFF</color>
+	<color name="white_40">#66FFFFFF</color>
+	<color name="white_50">#80FFFFFF</color>
+	<color name="white_70">#B3FFFFFF</color>
+
+	<color name="red">#FF3D3D</color>
+
+	<color name="success">#6F3A9CFC</color>
+	<color name="fail">#6FFF004C</color>
+	<color name="gray">#FF999999</color>
+	<color name="idle">#CC000000</color>
+
+	<color name="main_radio_border">#FF505050</color>
+	<color name="main_gray">#FF4D4D4D</color>
+	<color name="license_gray">#FF666666</color>
+	<color name="bottom_sheet">#FF171717</color>
+</resources>

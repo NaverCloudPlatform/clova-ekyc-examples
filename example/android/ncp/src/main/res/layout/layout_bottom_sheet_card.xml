@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_draggable="true"
+    app:behavior_hideable="true"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/icon_bottom_sheet_swipe" />
+
+    <ImageView
+        android:id="@+id/bottom_sheet_icon_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/icon_bottom_sheet_caution" />
+
+    <TextView
+        android:id="@+id/bottom_sheet_head_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:paddingVertical="5dp"
+        android:text="@string/id_scan_alert_detect_fail_head"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/bottom_sheet_body_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingVertical="4dp"
+        android:text="@string/id_scan_alert_detect_fail_body"
+        android:textColor="@color/white_40"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/bottom_sheet_retry_button"
+        android:layout_width="307dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_enable"
+        android:text="@string/retry"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+</LinearLayout>

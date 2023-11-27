@@ -1,0 +1,222 @@
+<resources>
+	<string name="app_name">CLOVA eKYC</string>
+	<string name="main_title">NAVER CLOUD</string>
+	<string name="fragment_main_name">Clova eKYC</string>
+	<string name="fragment_main_description">eKYC SDK Demo app</string>
+	<string name="fragment_main_ekyc">eKYC Scenario</string>
+	<string name="fragment_main_qa">QA Tab</string>
+	<string name="fragment_id_scan_name">ID Scan Scenario</string>
+	<string name="fragment_face_name">Face Detector</string>
+	<string name="fragment_compare_name">Face Compare</string>
+	<string name="fragment_card_name">Card Detector</string>
+	<string name="fragment_id_card_name">ID Card Detector</string>
+	<string name="fragment_motion_name">Face Motion</string>
+	<string name="string_null"> </string>
+	<string name="button_retry">Retry</string>
+	<string name="btn_shoot">Shoot</string>
+
+	<!-- License -->
+	<string name="license_main_description">Enter the domain information with the type as ID card.</string>
+	<string name="license_main_description_compare">Enter the domain information with the type as face.</string>
+	<string name="license_sub_descritption">"You can check the domain information in \&quot;Console > Domain > Connect API > View.\&quot;</string>
+	<string name="license_secret_ket_hint">Enter the secret key.</string>
+	<string name="license_invoke_url_hint">Enter the APIGW Invoke URL.</string>
+	<string name="license_error_empty">Enter the secret Key and APIGW invoke url.</string>
+	<string name="license_error_verify">Domain information does not match.</string>
+	<string name="license_error_connection">Failed to communicate with the server.</string>
+	<string name="license_alert_main">Would you like to set the face domain information now? </string>
+	<string name="license_alert_sub">You can set the face domain information in the menu.</string>
+	<string name="license_alert_now">Set now</string>
+	<string name="license_alert_after">Set later</string>
+
+	<!-- Invalid Domain -->
+	<string name="invalid_domain">Request domain invalid.</string>
+	<string name="confirm">Confirm</string>
+
+	<!-- eKYC -->
+	<string name="id_scan_main_title1">Choose a mode</string>
+	<string name="id_scan_main_title2">before you start the</string>
+	<string name="id_scan_main_title3">ID Scan Scenario</string>
+	<string name="id_scan_error_compare">Enter the face domain information.</string>
+	<string name="id_scan_all_desc">Verify + Face Compare</string>
+	<string name="id_scan_verify_desc">Verify</string>
+	<string name="id_scan_compare_desc">Face Compare</string>
+	<string name="id_scan_main_desc">You can set follow options\nfrom the setting menu.</string>
+	<string name="id_scan_sub_desc">Similarity Threshold</string>
+	<string name="id_scan_btn_start">Lets Start</string>
+	<string name="id_scan_move_next_step">Move to Next Step</string>
+	<string name="id_scan_move_main">Move to Main Menu</string>
+	<string name="id_scan_move_verify">Verify User</string>
+
+	<!-- Verfiy Result-->
+	<string name="verify_result">Result</string>
+	<string name="verify_api_result">API Result</string>
+
+	<!-- eKYC Setting -->
+	<string name="ekyc_settings_document_url">ID Card Invoke URL</string>
+	<string name="ekyc_settings_compare_url">Face Invoke URL</string>
+	<string name="ekyc_settings_document_key">ID Card Secret Key</string>
+	<string name="ekyc_settings_compare_key">Face Secret Key</string>
+
+	<string name="ekyc_settings_name">Mode Setting</string>
+	<string name="ekyc_settings_similarity_text">Similarity Threshold</string>
+	<string name="ekyc_settings_similarity_description_text">More than 0.65 is\nrecommended</string>
+	<string name="ekyc_settings_spoofing_option_text">Spoofing option</string>
+	<string name="ekyc_settings_rgb_spoofing_text">RGB Spoofing</string>
+	<string name="ekyc_settings_spoofing_threshold_text">Spoofing Threshold</string>
+	<string name="ekyc_settings_spoofing_default_threshold_text">Default : 0.50</string>
+	<string name="ekyc_settings_face_expression_spoofing_text">Face Expression Spoofing</string>
+	<string name="ekyc_settings_mouth_expression_spoofing_text">Mouth Open</string>
+	<string name="ekyc_settings_eye_expression_spoofing_text">Eye Blink</string>
+	<string name="ekyc_settings_pose_expression_spoofing_text">Head Pose(angle)</string>
+	<string name="ekyc_settings_done">Done</string>
+
+	<!-- ID Scan Alerts -->
+	<string name="id_scan_alert_detect_fail_head">Documents could not be verified.</string>
+	<string name="id_scan_alert_detect_fail_body">Put document and smartphones\nin parallel.</string>
+	<string name="id_scan_alert_detect_glare_head">Glare is detected.</string>
+	<string name="id_scan_alert_detect_glare_body">Please avoid the direct light.</string>
+	<string name="id_scan_alert_detect_blur_head">Image is blurred.</string>
+	<string name="id_scan_alert_detect_blur_body">Please try again.</string>
+	<string name="id_scan_alert_detect_dark_head">Image is too dark.</string>
+	<string name="id_scan_alert_detect_dark_body">Please take a picture in a brighter place.</string>
+	<string name="id_scan_alert_face_fail_head">Different from the front ID Card.</string>
+	<string name="id_scan_alert_face_fail_body">Please put the right ID Card.</string>
+	<string name="id_scan_alert_change_manual_capture_head">Can\'t read the document\nSwitch to manual capture.</string>
+	<string name="id_scan_alert_change_manual_capture_body">Align the document exactly in the frame\nand take picture without blurring.</string>
+	<string name="id_scan_alert_button_retry">Retake</string>
+	<string name="id_scan_alert_button_change_manual">Shoot manually</string>
+
+	<!-- ID Scan Front -->
+	<string name="id_scan_front_title">ID card scanning</string>
+	<string name="id_scan_front_desc">Recognize the front of the card.\nPlease put your ID card in the guide</string>
+
+	<!-- ID Scan Front Result -->
+	<string name="id_scan_front_result_title1">Please check the image you took.</string>
+	<string name="id_scan_front_result_title2">Images similar to the following will\nnot be approved.</string>
+	<string name="id_scan_front_result_body_hidden">Hidden by\nsomething</string>
+	<string name="id_scan_front_result_body_blur">Blurry\nphoto</string>
+	<string name="id_scan_front_result_body_glare">Have\nreflection</string>
+	<string name="id_scan_front_result_body_two_face">Two faces\nare showing</string>
+
+	<!-- ID Scan Tilt -->
+	<string name="id_scan_tilt_description">Recognize the side of the card.\nTilt the card slowly to fit the square.</string>
+	<string name="id_scan_tilt_face_check_failed">Due to the face compare,\nIt seems like different card is detected.</string>
+
+	<!-- ID Scan Tilt Result -->
+	<string name="id_scan_tilt_result_body_thickness">Thickness\nis not showing</string>
+	<string name="id_scan_tilt_result_body_object">Other Objects\nare in the photo</string>
+
+	<!-- ID Scan Back -->
+	<string name="id_scan_back_description">Recognize the back of the card.\nPlease put your ID card in the guide.</string>
+
+	<!-- ID Scan Back Result -->
+	<string name="id_scan_back_result_body_object">Other Objects\nare showing</string>
+
+	<!-- Face Scan -->
+	<string name="face_scan_title">Face Check</string>
+	<string name="face_scan_description">Now we start face recognition step.\nRecognizing your front face</string>
+
+
+	<!-- Card -->
+	<string name="card_button_rotate">Rotate</string>
+
+	<!-- Card Settings -->
+	<string name="card_settings_side_detection">Side Detection</string>
+	<string name="card_settings_face_location">Face Location on ID Card</string>
+	<string name="card_settings_face_location_left">Left Side</string>
+	<string name="card_settings_face_location_right">Right Side</string>
+	<string name="card_settings_face_location_no_matter">Anywhere</string>
+	<string name="card_settings_face_location_none">None</string>
+	<string name="card_settings_target_angle">Angle Parameter</string>
+	<string name="card_settings_angle_offset">Angle Offset</string>
+	<string name="card_settings_blur">Blur Threshold</string>
+	<string name="card_settings_glare">Glare Percentage</string>
+	<string name="card_settings_dark">Dark Threshold</string>
+	<string name="card_settings_minimum_target_angle">75</string>
+	<string name="card_settings_maximum_target_angle">105</string>
+	<string name="card_settings_minimum_angle_offset">5</string>
+	<string name="card_settings_maximum_angle_offset">10</string>
+	<string name="card_settings_minimum_blur_threshold">0.05</string>
+	<string name="card_settings_maximum_blur_threshold">0.2</string>
+	<string name="card_settings_minimum_glare_percentage">0.01</string>
+	<string name="card_settings_maximum_glare_percentage">0.15</string>
+	<string name="card_settings_minimum_dark_threshold">1</string>
+	<string name="card_settings_maximum_dark_threshold">10</string>
+	<string name="card_settings_target_angle_default">Default : 90</string>
+	<string name="card_settings_angle_offset_default">Default : 5</string>
+	<string name="card_settings_blur_default">Default: 0.13</string>
+	<string name="card_settings_glare_default">Default: 0.07</string>
+	<string name="card_settings_dark_default">Default: 7</string>
+
+	<!-- Face Settings -->
+	<string name="face_settings_name">Face Setting</string>
+	<string name="face_settings_draw_landmark">Draw Face Landmark</string>
+	<string name="face_settings_landmark">Face Landmark</string>
+	<string name="face_settings_landmark_5p">5points</string>
+	<string name="face_settings_landmark_106p">106points</string>
+	<string name="face_settings_draw_bounding_box">Draw Face Bounding Box</string>
+	<string name="face_settings_enable_spoofing">Enable Spoofing Detector</string>
+	<string name="face_settings_recognition_mask">Face Recognition with mask</string>
+	<string name="face_settings_spoofing">Spoofing Threshold</string>
+	<string name="face_settings_spoofing_default">Default : 0.1</string>
+
+	<!-- Face Compare -->
+	<string name="face_compare_settings_name">Face Compare Setting</string>
+	<string name="face_compare_noti_gallery">You can take a picture or bring it from\nthe gallery to compare it with your face.</string>
+	<string name="face_compare_noti_mask">It provides face compare with mask.</string>
+	<string name="face_compare_fail_to_find_a_face">Failed to find a face.\nPlease try another photo.</string>
+	<string name="face_compare_fail_to_crop_image">Fail to crop face image.</string>
+	<string name="face_compare_wearing_mask">Seems like you are wearing a mask.\nTo Check in, take off your mask.</string>
+
+	<string name="face_compare">Face Compare</string>
+	<string name="face_compare_edge">EDGE</string>
+	<string name="face_compare_server">SERVER</string>
+	<string name="face_compare_server_mask">Masked face available</string>
+	<string name="face_compare_dialog_live">Live Capture</string>
+	<string name="face_compare_dialog_gallery">Photos from Gallery</string>
+	<string name="face_compare_select_photo">Select the\ncompare photo</string>
+	<string name="face_compare_server_compare">Compare</string>
+	<string name="face_compare_retake">Retake</string>
+
+	<!-- Face Motion Settings -->
+	<string name="face_motion_eye_blink">Eye Blink</string>
+	<string name="face_motion_mouth_open">Mouth Open</string>
+	<string name="face_motion_head_nod">Head Nod</string>
+	<string name="face_motion_head_roll">Head Roll</string>
+	<string name="face_motion_head_shake">Head Shake</string>
+
+	<!-- Face Motion -->
+	<string name="face_motion">Face Motions</string>
+	<string name="face_motion_eye">Close your eyes</string>
+	<string name="face_motion_mouth">Open your mouth</string>
+	<string name="face_motion_nod">Nod your head</string>
+	<string name="face_motion_shake">Shake your head left to the right</string>
+	<string name="face_motion_roll">Roll your head left to the right</string>
+
+	<!-- Face Motion Result -->
+	<string name="motion_result_process_success">Authentication\nSuccess</string>
+	<string name="motion_result_process_maybe">Human check needed</string>
+	<string name="motion_result_process_fail">Authentication\nOver</string>
+	<string name="motion_result_process_desc_spoof">We had detected the\nRGB SPOOF ATTEMPT.</string>
+	<string name="motion_result_process_desc_head">"The similarity of ID and the real face is "</string>
+	<string name="motion_result_process_desc_body_maybe">",\nwhich needs human check."</string>
+	<string name="motion_result_process_desc_body_fail">",\nwhich is LOWER than the standard."</string>
+	<string name="motion_result_process_similarity">"similarity: "</string>
+	<string name="motion_result_dialog_network_error">Connection Failed.</string>
+	<string name="motion_result_dialog_response_error">Response Error.</string>
+
+
+	<string name="settings">Settings</string>
+	<string name="home">Home</string>
+
+	<!-- ContentDescription -->
+	<string name="description_clova_image">Clova Logo</string>
+	<string name="description_preview_image">Preview image</string>
+	<string name="description_face_result_info">Face Result Info</string>
+	<string name="description_face_settings">Face Settings</string>
+	<string name="description_card_mask">Mask ImageView</string>
+	<string name="description_card_mask_rotate">Mask ImageView Rotate</string>
+	<string name="description_card_capture">Capture</string>
+	<string name="description_card_result_image">Result Image</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/black"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"
+        android:paddingHorizontal="@dimen/mainPaddingHorizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/app_title"
+            app:layout_constraintBottom_toTopOf="@id/main_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/main_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/license_main_description"
+            android:textColor="@color/white"
+            android:textSize="27dp"
+            app:layout_constraintBottom_toTopOf="@+id/sub_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_title" />
+
+        <TextView
+            android:id="@+id/sub_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/license_sub_descritption"
+            android:textColor="@color/license_gray"
+            android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@id/secret_key_edittext"
+            app:layout_constraintEnd_toEndOf="@id/main_description"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/main_description"
+            app:layout_constraintTop_toBottomOf="@id/main_description" />
+
+        <EditText
+            android:id="@+id/secret_key_edittext"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_lisence_edittext"
+            android:gravity="center_vertical|start"
+            android:hint="@string/license_secret_ket_hint"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="9dp"
+            android:paddingVertical="3dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/license_gray"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/invoke_url_edittext"
+            app:layout_constraintTop_toBottomOf="@id/sub_description" />
+
+        <EditText
+            android:id="@+id/invoke_url_edittext"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_lisence_edittext"
+            android:gravity="center_vertical|start"
+            android:hint="@string/license_invoke_url_hint"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="9dp"
+            android:paddingVertical="3dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/license_gray"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/secret_key_edittext"
+            app:layout_constraintBottom_toBottomOf="@+id/error_descreption"/>
+
+        <TextView
+            android:id="@+id/error_descreption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/red"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/invoke_url_edittext"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/invoke_url_edittext"
+            app:layout_constraintTop_toBottomOf="@id/invoke_url_edittext" />
+
+        <Button
+            android:id="@+id/button_done"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_enable"
+            android:text="@string/ekyc_settings_done"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/loading_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_70"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loading_animation"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="EyeD_loading.json"
+        app:lottie_loop="true"
+        app:lottie_speed="1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

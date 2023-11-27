@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ClovaVisionImage</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>clovaeyed-android</span>
+            </a>
+    </div>
+    <div>
+    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":clovaeyed-android:dokkaNcpHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="clovaeyed-android::ai.clova.eyed.image/ClovaVisionImage///PointingToDeclaration//165103983">
+  <div class="breadcrumbs"><a href="../../../index.html">clovaeyed-android</a><span class="delimiter">/</span><a href="../index.html">ai.clova.eyed.image</a><span class="delimiter">/</span><span class="current">ClovaVisionImage</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Clova</span><wbr></wbr><span>Vision</span><wbr></wbr><span><span>Image</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">ClovaVisionImage</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>imageFormat<span class="token operator">: </span><a href="-image-format/index.html">ClovaVisionImage.ImageFormat</a><span class="token operator"> = </span>ImageFormat.RGBA8888<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>rotationDegrees<span class="token operator">: </span><a href="-rotation-degrees/index.html">ClovaVisionImage.RotationDegrees</a><span class="token operator"> = </span>RotationDegrees.D0<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>isFlip<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><p class="paragraph">The container for original input image serving as a source to inferencing.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,FUNCTION,PROPERTY">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1230011675%2FConstructors%2F165103983" anchor-label="ClovaVisionImage" id="-1230011675%2FConstructors%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-clova-vision-image.html"><span>Clova</span><wbr></wbr><span>Vision</span><wbr></wbr><span><span>Image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1230011675%2FConstructors%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">width<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">height<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">imageFormat<span class="token operator">: </span><a href="-image-format/index.html">ClovaVisionImage.ImageFormat</a><span class="token operator"> = </span>ImageFormat.RGBA8888<span class="token punctuation">, </span></span><span class="parameter ">rotationDegrees<span class="token operator">: </span><a href="-rotation-degrees/index.html">ClovaVisionImage.RotationDegrees</a><span class="token operator"> = </span>RotationDegrees.D0<span class="token punctuation">, </span></span><span class="parameter ">isFlip<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Primary constructor for <a href="index.html">ClovaVisionImage</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-118144123%2FClasslikes%2F165103983" anchor-label="Companion" id="-118144123%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-118144123%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-43800545%2FClasslikes%2F165103983" anchor-label="ImageFormat" id="-43800545%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-image-format/index.html"><span>Image</span><wbr></wbr><span><span>Format</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-43800545%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-image-format/index.html">ImageFormat</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-image-format/index.html">ClovaVisionImage.ImageFormat</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The frame type of a image</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1116572824%2FClasslikes%2F165103983" anchor-label="RotationDegrees" id="-1116572824%2FClasslikes%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-rotation-degrees/index.html"><span>Rotation</span><wbr></wbr><span><span>Degrees</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1116572824%2FClasslikes%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-rotation-degrees/index.html">RotationDegrees</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="-rotation-degrees/index.html">ClovaVisionImage.RotationDegrees</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">The degree type of image rotation</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-254275548%2FFunctions%2F165103983" anchor-label="crop" id="-254275548%2FFunctions%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="crop.html"><span><span>crop</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-254275548%2FFunctions%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="crop.html"><span class="token function">crop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rect<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ClovaVisionImage</a></div><div class="brief "><p class="paragraph">Crop the image with the Rect coordinates.</p></div><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="crop.html"><span class="token function">crop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span></span><span class="parameter ">mask<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Px.html"><span class="token annotation builtin">Px</span></a> </span>extraSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">ClovaVisionImage</a></div><div class="brief "><p class="paragraph">Returns Vision Image Crop information.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-686825031%2FFunctions%2F165103983" anchor-label="getBitmap" id="-686825031%2FFunctions%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-bitmap.html"><span>get</span><wbr></wbr><span><span>Bitmap</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-686825031%2FFunctions%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-bitmap.html"><span class="token function">getBitmap</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html">Bitmap</a></div><div class="brief "><p class="paragraph">Initializes and returns an Bitmap object</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1132628142%2FFunctions%2F165103983" anchor-label="rect" id="1132628142%2FFunctions%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rect.html"><span><span>rect</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1132628142%2FFunctions%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="rect.html"><span class="token function">rect</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">parent<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span></span><span class="parameter ">mask<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/Px.html"><span class="token annotation builtin">Px</span></a> </span>extraSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Rect.html">Rect</a></div><div class="brief "><p class="paragraph">Returns scaled mask rect from Vision Image.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="2124098610%2FProperties%2F165103983" anchor-label="data" id="2124098610%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data.html"><span><span>data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2124098610%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="data.html">data</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">ByteArray representing bitmap data in a image</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1341094507%2FProperties%2F165103983" anchor-label="height" id="-1341094507%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="height.html"><span><span>height</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1341094507%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="height.html">height</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The height of the image in pixels</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-924855028%2FProperties%2F165103983" anchor-label="imageFormat" id="-924855028%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="image-format.html"><span>image</span><wbr></wbr><span><span>Format</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-924855028%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="image-format.html">imageFormat</a><span class="token operator">: </span><a href="-image-format/index.html">ClovaVisionImage.ImageFormat</a></div><div class="brief "><p class="paragraph">the image format</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="243227653%2FProperties%2F165103983" anchor-label="isFlip" id="243227653%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-flip.html"><span>is</span><wbr></wbr><span><span>Flip</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="243227653%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="is-flip.html">isFlip</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1572734933%2FProperties%2F165103983" anchor-label="rotationDegrees" id="1572734933%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rotation-degrees.html"><span>rotation</span><wbr></wbr><span><span>Degrees</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1572734933%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="rotation-degrees.html">rotationDegrees</a><span class="token operator">: </span><a href="-rotation-degrees/index.html">ClovaVisionImage.RotationDegrees</a></div><div class="brief "><p class="paragraph">The amount of degrees required to make the original image portrait. If the original image is portrait, i.e. a person is standing upright, then set the degree equivalent to 0. Otherwise, set the degree equiavelent to 90 or 270.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="689084344%2FProperties%2F165103983" anchor-label="width" id="689084344%2FProperties%2F165103983" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release"></a>
+          <div class="table-row" data-filterable-current=":clovaeyed-android:dokkaNcpHtml/release" data-filterable-set=":clovaeyed-android:dokkaNcpHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="width.html"><span><span>width</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="689084344%2FProperties%2F165103983"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":clovaeyed-android:dokkaNcpHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="width.html">width</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">The width of the image in pixels</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

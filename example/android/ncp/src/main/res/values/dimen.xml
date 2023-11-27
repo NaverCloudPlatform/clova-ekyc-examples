@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="systemWindowInsetTop">56dp</dimen>
+
+    <dimen name="buttonMarginBottom">60dp</dimen>
+    <dimen name="buttonPaddingVertical">28dp</dimen>
+
+    <dimen name="resultHeight">130dp</dimen>
+    <dimen name="resultMarginStart">15dp</dimen>
+    <dimen name="resultMarginCenter">7dp</dimen>
+    <dimen name="resultMarginEnd">15dp</dimen>
+    <dimen name="resultMarginBottom">8dp</dimen>
+    <dimen name="resultPadding">10dp</dimen>
+    <dimen name="resultPaddingHorizontal">15dp</dimen>
+    <dimen name="resultPaddingVertical">20dp</dimen>
+    <dimen name="resultTextSize">14dp</dimen>
+    <dimen name="resultTextMargin">2dp</dimen>
+
+    <dimen name="pwrdByClovaWidth">95dp</dimen>
+    <dimen name="pwrdByClovaMarginTop">10dp</dimen>
+    <dimen name="pwrdByClovaMarginBottom">10dp</dimen>
+
+    <!-- App Main -->
+    <dimen name="mainPaddingHorizontal">40dp</dimen>
+
+    <dimen name="mainTitleWidth">20dp</dimen>
+    <dimen name="mainTitleHeight">23dp</dimen>
+    <dimen name="mainTitleMarginBottom">30dp</dimen>
+
+    <dimen name="mainButtonMarginBottom">4dp</dimen>
+    <dimen name="mainButtonImagePadding">15dp</dimen>
+    <dimen name="mainButtonPaddingHorizontal">25dp</dimen>
+    <dimen name="mainButtonPaddingVertical">11dp</dimen>
+    <dimen name="mainButtonTextSize">16dp</dimen>
+
+    <dimen name="mainVersionMarginBottom">30dp</dimen>
+    <dimen name="mainVersionTextSize">14dp</dimen>
+
+    <!-- eyeD -->
+    <dimen name="ekycFaceWidth">240dp</dimen>
+    <dimen name="ekycFaceMarginTop">96dp</dimen>
+    <dimen name="ekycSettingsModelRecognitionWidth">79dp</dimen>
+    <dimen name="ekycSettingsModelSpoofingWidth">125dp</dimen>
+    <dimen name="infoTextHeight">70dp</dimen>
+    <dimen name="infoTextPadding">5dp</dimen>
+    <dimen name="infoTextSize">16dp</dimen>
+
+    <!-- cardDetector -->
+    <dimen name="cardMaskLayoutMargin">25dp</dimen>
+    <dimen name="cardRotateButtonHeight">26dp</dimen>
+    <dimen name="cardRetryButtonWidth">80dp</dimen>
+    <dimen name="cardRetryButtonHeight">32dp</dimen>
+
+    <!-- ICR Result -->
+    <dimen name="scrollViewMarginHorizontal">35dp</dimen>
+    <dimen name="scrollViewMarginVertical">20dp</dimen>
+    <dimen name="scrollViewPaddingVertical">15dp</dimen>
+    <dimen name="scrollViewPaddingHorizontal">20dp</dimen>
+</resources>
