@@ -4,7 +4,7 @@ plugins {
 }
 
 val kotlin = "1.8.0"
-val androidGradle = "7.4.1"
+val androidGradle = "8.5.0"
 val okhttp = "4.9.3"
 
 repositories {

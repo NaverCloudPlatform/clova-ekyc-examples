@@ -537,7 +537,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -769,7 +769,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Decoder",
-                        "printedName": "Swift.Decoder",
+                        "printedName": "any Swift.Decoder",
                         "usr": "s:s7DecoderP"
                       }
                     ],
@@ -1835,7 +1835,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Decoder",
-                                "printedName": "Swift.Decoder",
+                                "printedName": "any Swift.Decoder",
                                 "usr": "s:s7DecoderP"
                               }
                             ],
@@ -1975,7 +1975,7 @@
                               {
                                 "kind": "TypeNominal",
                                 "name": "Decoder",
-                                "printedName": "Swift.Decoder",
+                                "printedName": "any Swift.Decoder",
                                 "usr": "s:s7DecoderP"
                               }
                             ],
@@ -2020,7 +2020,7 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Decoder",
-                            "printedName": "Swift.Decoder",
+                            "printedName": "any Swift.Decoder",
                             "usr": "s:s7DecoderP"
                           }
                         ],
@@ -2065,7 +2065,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Decoder",
-                        "printedName": "Swift.Decoder",
+                        "printedName": "any Swift.Decoder",
                         "usr": "s:s7DecoderP"
                       }
                     ],
@@ -2110,7 +2110,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -2917,7 +2917,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -3362,12 +3362,12 @@
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(ClovaEyeD.NcpEkycApiManager.ApiError.Type) -> (Swift.Error?) -> ClovaEyeD.NcpEkycApiManager.ApiError",
+                    "printedName": "(ClovaEyeD.NcpEkycApiManager.ApiError.Type) -> ((any Swift.Error)?) -> ClovaEyeD.NcpEkycApiManager.ApiError",
                     "children": [
                       {
                         "kind": "TypeFunc",
                         "name": "Function",
-                        "printedName": "(Swift.Error?) -> ClovaEyeD.NcpEkycApiManager.ApiError",
+                        "printedName": "((any Swift.Error)?) -> ClovaEyeD.NcpEkycApiManager.ApiError",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -3378,17 +3378,17 @@
                           {
                             "kind": "TypeNominal",
                             "name": "Tuple",
-                            "printedName": "(rawError: Swift.Error?)",
+                            "printedName": "(rawError: (any Swift.Error)?)",
                             "children": [
                               {
                                 "kind": "TypeNominal",
                                 "name": "Optional",
-                                "printedName": "Swift.Error?",
+                                "printedName": "(any Swift.Error)?",
                                 "children": [
                                   {
                                     "kind": "TypeNominal",
                                     "name": "Error",
-                                    "printedName": "Swift.Error",
+                                    "printedName": "any Swift.Error",
                                     "usr": "s:s5ErrorP"
                                   }
                                 ],
@@ -4098,7 +4098,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Decoder",
-                    "printedName": "Swift.Decoder",
+                    "printedName": "any Swift.Decoder",
                     "usr": "s:s7DecoderP"
                   }
                 ],
@@ -4123,7 +4123,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Encoder",
-                    "printedName": "Swift.Encoder",
+                    "printedName": "any Swift.Encoder",
                     "usr": "s:s7EncoderP"
                   }
                 ],
@@ -4701,352 +4701,352 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
-      "offset": 706,
+      "offset": 736,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
-      "offset": 747,
+      "offset": 777,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
-      "offset": 786,
+      "offset": 816,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
-      "offset": 706,
+      "offset": 736,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
-      "offset": 747,
+      "offset": 777,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
-      "offset": 786,
+      "offset": 816,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
-      "offset": 990,
+      "offset": 1020,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
-      "offset": 1040,
+      "offset": 1070,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
-      "offset": 1088,
+      "offset": 1118,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1166,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/UIKit\/UIImage.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/UIKit\/UIImage.swift",
       "kind": "FloatLiteral",
-      "offset": 2831,
+      "offset": 2861,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Utility\/AtomicVariable.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Utility\/AtomicVariable.swift",
       "kind": "StringLiteral",
-      "offset": 231,
+      "offset": 261,
       "length": 13,
       "value": "\"AtomicQueue\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/URLSessionTaskMaker.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/URLSessionTaskMaker.swift",
       "kind": "Array",
-      "offset": 364,
+      "offset": 394,
       "length": 150,
       "value": "[200, 201, 202, 203, 204, 205, 206, 207, 208, 226, 300, 301, 302, 303, 304, 305, 306, 307, 308]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 304,
+      "offset": 334,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 446,
+      "offset": 476,
       "length": 7,
       "value": "\"image\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 487,
+      "offset": 517,
       "length": 5,
       "value": "\"jpg\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 958,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
-      "offset": 965,
+      "offset": 995,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
-      "offset": 1000,
+      "offset": 1030,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
-      "offset": 928,
+      "offset": 958,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
-      "offset": 965,
+      "offset": 995,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
-      "offset": 1000,
+      "offset": 1030,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
-      "offset": 866,
+      "offset": 896,
       "length": 7,
       "value": "\":#[]@\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
-      "offset": 971,
+      "offset": 1001,
       "length": 13,
       "value": "\"!$&'()*+,;=\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
-      "offset": 1046,
+      "offset": 1076,
       "length": 54,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
-      "offset": 1075,
+      "offset": 1105,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
-      "offset": 1099,
+      "offset": 1129,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
       "kind": "StringLiteral",
-      "offset": 1086,
+      "offset": 1116,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1153,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
       "kind": "StringLiteral",
-      "offset": 1086,
+      "offset": 1116,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
       "kind": "StringLiteral",
-      "offset": 1123,
+      "offset": 1153,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "StringLiteral",
-      "offset": 570,
+      "offset": 600,
       "length": 15,
       "value": "\"X-EKYC-SECRET\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
-      "offset": 1903,
+      "offset": 1933,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
-      "offset": 1970,
+      "offset": 2000,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2033,
+      "offset": 2063,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
-      "offset": 3390,
+      "offset": 3420,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
-      "offset": 3455,
+      "offset": 3485,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3516,
+      "offset": 3546,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
-      "offset": 5095,
+      "offset": 5125,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
-      "offset": 5161,
+      "offset": 5191,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 5223,
+      "offset": 5253,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "StringLiteral",
-      "offset": 702,
+      "offset": 732,
       "length": 33,
       "value": "\"application\/json; charset=utf-8\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Array",
-      "offset": 769,
+      "offset": 799,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Dictionary",
-      "offset": 806,
+      "offset": 836,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Dictionary",
-      "offset": 847,
+      "offset": 877,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Array",
-      "offset": 883,
+      "offset": 913,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
-      "offset": 297,
+      "offset": 327,
       "length": 11,
       "value": "\"cardImage\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
-      "offset": 318,
+      "offset": 348,
       "length": 5,
       "value": "\"jpg\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
-      "offset": 361,
+      "offset": 391,
       "length": 11,
       "value": "\"faceImage\""
     },
     {
-      "filePath": "\/Users\/user\/workspace\/buildAgent-all\/work\/5602c9a78a1db2d2\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
-      "offset": 382,
+      "offset": 412,
       "length": 5,
       "value": "\"jpg\""
     }

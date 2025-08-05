@@ -1,5 +1,6 @@
 /**
- * Copyright 2023-present NAVER Corp.
+ * CLOVA EyeD(eKYC)
+ * Copyright (c) 2023-present NAVER Cloud Corp.
  * Unauthorized use, modification and redistribution of this software are strongly prohibited.
  */
 

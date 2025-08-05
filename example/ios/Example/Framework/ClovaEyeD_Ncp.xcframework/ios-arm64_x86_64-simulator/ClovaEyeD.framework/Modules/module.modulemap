@@ -1,7 +1,7 @@
 framework module ClovaEyeD {
   umbrella header "ClovaEyeD.h"
-
   export *
+
   module * { export * }
 }
 

@@ -9,13 +9,13 @@ import java.util.*
 object Android {
     val defaultGradlePlugin = DependencyNotation(
         path = "com.android.tools.build:gradle",
-        version = "7.4.1"
+        version = "8.5.0"
     )
 
-    const val compileSdk = 33
-    const val buildToolsVersion = "33.0.0"
+    const val compileSdk = 35
+    const val buildToolsVersion = "35.0.0"
     const val minSdk = 24
-    const val targetSdk = 33
+    const val targetSdk = 35
 
     val versionName: (Project) -> String = { project ->
         buildString {
@@ -72,7 +72,7 @@ object Android {
         version = androidxNavigationVersion
     )
 
-    private const val androidxCameraVersion = "1.1.0"
+    private const val androidxCameraVersion = "1.4.2"
 
     val androidxCameraCore = DependencyNotation(
         path = "androidx.camera:camera-core",

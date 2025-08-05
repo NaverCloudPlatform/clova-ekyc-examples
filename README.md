@@ -195,7 +195,7 @@ CLOVA ID card detector is a module that detects ID Card with user-specified rati
 
 ## CLOVA Face Detector
 
-CLOVA face detector is a face recognition SDK based on the machine learning solution, CLOVA Eyes SDK, which enables the use of vision models on an edge basis. The CLOVA Eyes SDK provides a range of features including face detection, face recognition, and face similarity comparison required for eKYC services, and offers the following features:
+CLOVA face detector is a face recognition SDK based on the machine learning solution, CLOVA Eyes SDK, which enables the use of vision models on an edge basis. The CLOVA Eyes SDK provides a range of features including face detection, face recognition, and face similarity comparison required for eKYC services, and offers the following features:<br>
 
 ![CLOVA_See_Face](./docs/images/clova_face_detector_function.png)
 
