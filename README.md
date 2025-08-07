@@ -251,11 +251,11 @@ Copyright (c) 2023-present NAVER Cloud Corp.
 
 Unauthorized use, modification and redistribution of this software are strongly prohibited.
 ```
-
 <br/>
 
 # Contact
 
-## Official internal/external Q\&A channel
-
-- 
+| Via |  |
+|----------|------|
+| **Issues** | [GitHub Issues](https://github.com/NaverCloudPlatform/clova-ekyc-examples/issues)
+| **Email** | dl_clova_eyed_customer_request@navercorp.com
