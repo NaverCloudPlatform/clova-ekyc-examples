@@ -6,7 +6,7 @@
 import Foundation
 
 enum HomeScenario: String, CaseIterable {
-    case ekyc = "eKYC Sceanrio"
+    case ekyc = "eKYC Scenario"
 
     static var values: [HomeScenario] {
         return [.ekyc]

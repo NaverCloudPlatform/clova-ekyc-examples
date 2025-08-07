@@ -12,6 +12,11 @@ plugins {
 android {
     compileSdk = Android.compileSdk
     buildToolsVersion = Android.buildToolsVersion
+    namespace = "ai.clova.eyed.example"
+
+    buildFeatures {
+        buildConfig = true
+    }
 
     defaultConfig {
         applicationId = "ai.clova.eyed.example.ncp"
@@ -67,8 +72,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     packagingOptions {
@@ -76,7 +81,7 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
         freeCompilerArgs = listOf(
             "-Xuse-experimental=kotlinx.coroutines.ObsoleteCoroutinesApi",
             "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi"

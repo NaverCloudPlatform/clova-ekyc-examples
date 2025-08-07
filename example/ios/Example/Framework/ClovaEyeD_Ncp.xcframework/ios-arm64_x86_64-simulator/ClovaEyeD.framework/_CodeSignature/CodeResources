@@ -6,103 +6,103 @@
 	<dict>
 		<key>Headers/ClovaCardDetector.h</key>
 		<data>
-		TgIjvZwDGZxeLK+n1z6U69oXZkM=
+		BkXmKfomgdToBG+4UbfiR4Y3pxQ=
 		</data>
 		<key>Headers/ClovaCardDetectorOption.h</key>
 		<data>
-		wp2AgG9CbIuy/FmRt2oSG+KRLVU=
+		LuOBrfC02p5bshHWYnqtpaZfhUc=
 		</data>
 		<key>Headers/ClovaCardResult.h</key>
 		<data>
-		QbP7ALljBPfMl2gIXDfpvHO35rM=
+		lrZtAqeFcsbqVWX+9lDYMQo+8Oo=
 		</data>
 		<key>Headers/ClovaEyeD-Swift.h</key>
 		<data>
-		jS/GKuw2iXi9fzgWT+4BQU/o10E=
+		zPqqAKj5XmU2hOSysesoEBidLic=
 		</data>
 		<key>Headers/ClovaEyeD.h</key>
 		<data>
-		WQsHdwuDTxkhywPGI6PluI+MxYU=
+		8ZwM56x8z1919e7oRX9Qn7C4oDY=
 		</data>
 		<key>Headers/ClovaFaceDetector.h</key>
 		<data>
-		N1y0nkbC8uWw46Yqi3tvxg5iVyk=
+		CGtXzZJogRglyTmasYD4Z4MXn9U=
 		</data>
 		<key>Headers/ClovaFaceDetectorOption.h</key>
 		<data>
-		gwSOOHLluk3+126Yv3RysGHqCfg=
+		jGIan4TviVHMHX+na5PTb4Ckni8=
 		</data>
 		<key>Headers/ClovaFaceResult.h</key>
 		<data>
-		nasDDLxw7mY1IupW1dncKt2T7Yk=
+		wtLcux6dILtbSXd0aDr484vC4s0=
 		</data>
 		<key>Headers/ClovaIdCardDetector.h</key>
 		<data>
-		0KVIfH5eblaX0QPh77lHyFi4ftk=
+		kFEnbEl1Hz69spH6gInNxDJzk2s=
 		</data>
 		<key>Headers/ClovaIdCardDetectorOption.h</key>
 		<data>
-		e0Gb8k03h+xMP+KvNIDLDBSEW4k=
+		wUaY9DTA5BbKOwenl+Cc348QJ84=
 		</data>
 		<key>Headers/ClovaIdCardResult.h</key>
 		<data>
-		tES/09IF1uSDK40esgflS84F9Og=
+		+k2I9fMDJpmq8td95Ht59c2vl2s=
 		</data>
 		<key>Headers/ClovaLicenseChecker.h</key>
 		<data>
-		tuZ+wFGYNhUynjacidTCTYD8Id0=
+		eHH8LTuzlFOOnmDQ8DQytc443uQ=
 		</data>
 		<key>Headers/ClovaVisionImage.h</key>
 		<data>
-		WjGdO038Jp+IYv/EUWT1o+iP64E=
+		cLtA7p5oTh2nOKLgADdLbbI55Hg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		z38TXDBG8FYAD+mZ2cOceUoDrAo=
+		FiBX5FxGMZO4/+aArxynfDj/7f0=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WJMmuuFJYQl9Wh151eXRqIl9KEw=
+		lKtYNK6BqiphlSgJTSvdckxs6ro=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5cvq/yQ/HdpookCyq3auU0r9390=
+		0csa2j1qFmsi66PPe52enyzVhWs=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Q0tDDUsjClUqdIVqqRbxQSl9p1o=
+		nv3k+AiFhU+yN1v0N5JMlwsSv68=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5cvq/yQ/HdpookCyq3auU0r9390=
+		0csa2j1qFmsi66PPe52enyzVhWs=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V6Pmo2DSnkS1MI4nX7w1Vx5ggdM=
+		14dlRHP/pcYKiCVFm3GnqaytN3s=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WJMmuuFJYQl9Wh151eXRqIl9KEw=
+		lKtYNK6BqiphlSgJTSvdckxs6ro=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		S8rEc1sincp+JPSBrfAVEvnstGQ=
+		gkSw3lJoWPsP9maD8mxiHxXo7tk=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		SmjHyihnPE6MwVpxVmDDsC0Iye0=
+		aj7xhjUFfO0nw6PXM5nlWsm6SME=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		S8rEc1sincp+JPSBrfAVEvnstGQ=
+		gkSw3lJoWPsP9maD8mxiHxXo7tk=
 		</data>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ftTYSHvqrBiHEQanDQ+yfZkJ2EM=
+		3e2zIqFDOQMotMAfjMH2IJt/BmE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		wP4YMOlctDuqhvkvNyxpEx+m7ug=
+		JaXdX2REhwKmUY5kIoz2IY/qn5s=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -111,168 +111,168 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DRs4Y3vttC4ryiNyahawBMt0c1ARleLPtMBwBDO9tlc=
+			z22L1t3+RBOryLnqjZZOdu/EFKUW86ls1O5+qHrNiD4=
 			</data>
 		</dict>
 		<key>Headers/ClovaCardDetectorOption.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qFIs73s8Nwue7L5twB0bSPcCuL++XSBUDTEvYi4TPtE=
+			fLrmGMzY+AZJZdxM638sZ9+HAu7TCJa9BUzkFyRDaag=
 			</data>
 		</dict>
 		<key>Headers/ClovaCardResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nBGJfV+1CVtykjVL6iDHBTU6JCXdVEASYC2RM4RZLLc=
+			y8JhWMTkZOOwN/XkwdXZBtZxUzu/uInaqRNr6D+1H+I=
 			</data>
 		</dict>
 		<key>Headers/ClovaEyeD-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ytb/YU3j7vSFNKEFfz6TaxrxVx8rmXYyepDJ6RUF2qI=
+			8KYV8vMmVw3gCBnwEy5Z+9k5+na8Z9TnHaUP8Ogw/X0=
 			</data>
 		</dict>
 		<key>Headers/ClovaEyeD.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L0baMy8Nw9vgOlofNl+CCmg3iVmtMzPs9XCBgom2HyQ=
+			jx+5AY+sCBYXM2caxfnk+EkegVU3gG5mBGO4oXriDvc=
 			</data>
 		</dict>
 		<key>Headers/ClovaFaceDetector.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ddMBjngp9o0Rb5hZY6Q0b647+CzDS/z417K3hLDHq1c=
+			r5ij+zRUZoGpiDzG1rw8tu0MpTC20rZcbTWXYG+1KCs=
 			</data>
 		</dict>
 		<key>Headers/ClovaFaceDetectorOption.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w2kLeh+/HYQVt53t9Mf5UwiXJCXOl6l7Ptiw659Nzoo=
+			l6aAlMpeXKL2q+DNF2tJl720Z97IQ378k2aXtbViT9U=
 			</data>
 		</dict>
 		<key>Headers/ClovaFaceResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			W3/eJlY30nXuVG3PmSQXb3Q2n1GmP3KAcTqQKvtP6Zc=
+			CmV1tpb9n0u8AKStyF8u5vv4TZUN0LWzvjizkEVasHo=
 			</data>
 		</dict>
 		<key>Headers/ClovaIdCardDetector.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8tw6PC+zGBZGS6j23vT0/WqY2Po+LXZB7iICKBXYzag=
+			5z3hK+wr2dOX1eiuqBu4D5OvKSF8Wf/mIXhJU4J0oiY=
 			</data>
 		</dict>
 		<key>Headers/ClovaIdCardDetectorOption.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vlBOfEhYVwkIuK4dPhONf/OqUxUI8gIcxDWt3j5Hd8U=
+			cwMScmN3hhxllyCrr3/q9Tp7RF/9nL+6ab3GqlRhKCY=
 			</data>
 		</dict>
 		<key>Headers/ClovaIdCardResult.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2Vg21ToCgP7SQbgsI5YcVx6CzW6EWP5zWavuMNUhDw0=
+			OaspDhs+Keyaf5HhbcIuu7VKd+gFt2UXm4s1rIvvBeA=
 			</data>
 		</dict>
 		<key>Headers/ClovaLicenseChecker.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VBt6bW8WnS57ksxVDky+ltXD6vSsj9bHs3fVDGrA9rY=
+			9vrc4jXa2uQzKtXVuB3XsL9tmyvs6qfws5xKqc62fEM=
 			</data>
 		</dict>
 		<key>Headers/ClovaVisionImage.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			izsh18fKBuJU7Fm2iGk525VKAV1gsHMlbkIcjJR+ZpQ=
+			68/uYtX8kv1kicmgr754dZ4atMJpGyvzGT8OPezg+uM=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmQ3wEIXs/aW9JbPKnhwlpTfECgIMRc83Qg4oVad1GU=
+			YhJYS9uzAiZKx9X1uE7ieUBDVLiZme8asyNRgoY7swQ=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GnhLkarGT4w6uofocq2kS85Elkq4SVGMIYfIJMS2py0=
+			FigL4P7kbehd4tMBa90wJD6ma3gY5ewGDP8ZReHOEjc=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			azTSCgAeX08SL0ezzGR7fwYxr6LyndRu8HtYI5s5AZA=
+			kUS4QRVrc3JGivtyltVpsPwkLR6uiwxq6GZL9hOhqmE=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GnhLkarGT4w6uofocq2kS85Elkq4SVGMIYfIJMS2py0=
+			FigL4P7kbehd4tMBa90wJD6ma3gY5ewGDP8ZReHOEjc=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1u+8kkMRewoT82QjjgrBdI3bEnliczRA6x/SquG2UNc=
+			12uhxWWRCnI3GEa/e0bCDlP6snEo04m2hxSjgPvVtJE=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmQ3wEIXs/aW9JbPKnhwlpTfECgIMRc83Qg4oVad1GU=
+			YhJYS9uzAiZKx9X1uE7ieUBDVLiZme8asyNRgoY7swQ=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V22jdi6agaAgQWDnWGpHhkqvexg0vO0C/Q4S8JOXAIo=
+			ydFkxFT3QKta4ogoXow6qus2ocjiy5DssgXfNrpyFok=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hmxfEEvrqRldXtyt79G9tajqzCphodTeaPwX813M/E8=
+			x8KqaNF+IZ40CHjw8yFhAaEf3vWNPClyoe4r2Zx+YHc=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V22jdi6agaAgQWDnWGpHhkqvexg0vO0C/Q4S8JOXAIo=
+			ydFkxFT3QKta4ogoXow6qus2ocjiy5DssgXfNrpyFok=
 			</data>
 		</dict>
 		<key>Modules/ClovaEyeD.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UH30YWEteoNIGwbG/yxdjobnSjAOinbJMpGNCgZAg14=
+			6nNn9n53nDuObvlB8ZdfKRqA/LztXBQLm0FQhPeJ87Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GHjOl4nL9ZxTFNWI6/qx+Hg+9jqN0W2yFxut2yWwK2U=
+			ZBb/n8pBqVYEQ1J1rgnkPzbu+forj5AeDB61ktbkDtM=
 			</data>
 		</dict>
 	</dict>

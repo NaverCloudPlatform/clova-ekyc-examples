@@ -1,3 +1,9 @@
+/**
+ * CLOVA EyeD(eKYC)
+ * Copyright (c) 2023-present NAVER Cloud Corp.
+ * Unauthorized use, modification and redistribution of this software are strongly prohibited.
+ */
+
 package ai.clova.eyed.example.utils
 
 import ai.clova.eyed.example.Configuration
