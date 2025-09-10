@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "ClovaEyeD",
+    "printedName": "ClovaEyeD",
     "children": [
       {
         "kind": "Import",
@@ -562,6 +562,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -791,6 +805,20 @@
                   "RawDocComment"
                 ],
                 "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
                   {
                     "kind": "Conformance",
                     "name": "Decodable",
@@ -1859,6 +1887,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Decodable",
                             "printedName": "Decodable",
                             "usr": "s:Se",
@@ -1999,6 +2041,20 @@
                         "conformances": [
                           {
                             "kind": "Conformance",
+                            "name": "Copyable",
+                            "printedName": "Copyable",
+                            "usr": "s:s8CopyableP",
+                            "mangledName": "$ss8CopyableP"
+                          },
+                          {
+                            "kind": "Conformance",
+                            "name": "Escapable",
+                            "printedName": "Escapable",
+                            "usr": "s:s9EscapableP",
+                            "mangledName": "$ss9EscapableP"
+                          },
+                          {
+                            "kind": "Conformance",
                             "name": "Decodable",
                             "printedName": "Decodable",
                             "usr": "s:Se",
@@ -2042,6 +2098,20 @@
                       "RawDocComment"
                     ],
                     "conformances": [
+                      {
+                        "kind": "Conformance",
+                        "name": "Copyable",
+                        "printedName": "Copyable",
+                        "usr": "s:s8CopyableP",
+                        "mangledName": "$ss8CopyableP"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
+                      },
                       {
                         "kind": "Conformance",
                         "name": "Decodable",
@@ -2089,6 +2159,20 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "Decodable",
                     "printedName": "Decodable",
                     "usr": "s:Se",
@@ -2133,6 +2217,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -2382,7 +2480,23 @@
               "AccessControl",
               "RawDocComment"
             ],
-            "isFromExtension": true
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
             "kind": "TypeDecl",
@@ -2860,6 +2974,20 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
@@ -2940,6 +3068,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -3473,6 +3615,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Error",
@@ -4034,6 +4190,20 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
+                    "name": "Copyable",
+                    "printedName": "Copyable",
+                    "usr": "s:s8CopyableP",
+                    "mangledName": "$ss8CopyableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "Equatable",
                     "printedName": "Equatable",
                     "usr": "s:SQ",
@@ -4146,6 +4316,20 @@
             ],
             "isFromExtension": true,
             "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
               {
                 "kind": "Conformance",
                 "name": "Decodable",
@@ -4515,6 +4699,22 @@
           "Final",
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4647,6 +4847,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4701,350 +4915,294 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
       "offset": 736,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
       "offset": 777,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
       "kind": "StringLiteral",
       "offset": 816,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
-      "kind": "StringLiteral",
-      "offset": 736,
-      "length": 9,
-      "value": "\"SUCCESS\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
-      "kind": "StringLiteral",
-      "offset": 777,
-      "length": 9,
-      "value": "\"FAILURE\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentResult.swift",
-      "kind": "StringLiteral",
-      "offset": 816,
-      "length": 7,
-      "value": "\"ERROR\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
       "offset": 1020,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
       "offset": 1070,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
       "offset": 1118,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiOption.swift",
       "kind": "StringLiteral",
       "offset": 1166,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/UIKit\/UIImage.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/UIKit\/UIImage.swift",
       "kind": "FloatLiteral",
       "offset": 2861,
       "length": 3,
       "value": "0.9"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Utility\/AtomicVariable.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Utility\/AtomicVariable.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 13,
       "value": "\"AtomicQueue\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/URLSessionTaskMaker.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/URLSessionTaskMaker.swift",
       "kind": "Array",
       "offset": 394,
       "length": 150,
       "value": "[200, 201, 202, 203, 204, 205, 206, 207, 208, 226, 300, 301, 302, 303, 304, 305, 306, 307, 308]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 334,
       "length": 4,
       "value": "1000"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
       "kind": "StringLiteral",
       "offset": 476,
       "length": 7,
       "value": "\"image\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpDocumentRequest.swift",
       "kind": "StringLiteral",
       "offset": 517,
       "length": 5,
       "value": "\"jpg\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
       "offset": 958,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
       "offset": 995,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
       "kind": "StringLiteral",
       "offset": 1030,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
-      "kind": "StringLiteral",
-      "offset": 958,
-      "length": 9,
-      "value": "\"SUCCESS\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
-      "kind": "StringLiteral",
-      "offset": 995,
-      "length": 9,
-      "value": "\"FAILURE\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareResult.swift",
-      "kind": "StringLiteral",
-      "offset": 1030,
-      "length": 7,
-      "value": "\"ERROR\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
       "offset": 896,
       "length": 7,
       "value": "\":#[]@\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
       "offset": 1001,
       "length": 13,
       "value": "\"!$&'()*+,;=\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
       "offset": 1076,
       "length": 54,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
       "offset": 1105,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Extension\/Foundation\/CharacterSet.swift",
       "kind": "StringLiteral",
       "offset": 1129,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
       "kind": "StringLiteral",
       "offset": 1116,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
       "kind": "StringLiteral",
       "offset": 1153,
       "length": 9,
       "value": "\"FAILURE\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
-      "kind": "StringLiteral",
-      "offset": 1116,
-      "length": 9,
-      "value": "\"SUCCESS\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Document\/NcpVerifyResult.swift",
-      "kind": "StringLiteral",
-      "offset": 1153,
-      "length": 9,
-      "value": "\"FAILURE\""
-    },
-    {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "StringLiteral",
       "offset": 600,
       "length": 15,
       "value": "\"X-EKYC-SECRET\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
       "offset": 1933,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
       "offset": 2000,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2063,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
       "offset": 3420,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
       "offset": 3485,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "IntegerLiteral",
       "offset": 3546,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
       "offset": 5125,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "Dictionary",
       "offset": 5191,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/NcpEkycApiManager.swift",
       "kind": "IntegerLiteral",
       "offset": 5253,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "StringLiteral",
       "offset": 732,
       "length": 33,
       "value": "\"application\/json; charset=utf-8\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Array",
       "offset": 799,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Dictionary",
       "offset": 836,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Dictionary",
       "offset": 877,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/HttpClient\/HTTPRequest.swift",
       "kind": "Array",
       "offset": 913,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
       "offset": 327,
       "length": 11,
       "value": "\"cardImage\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
       "offset": 348,
       "length": 5,
       "value": "\"jpg\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
       "offset": 391,
       "length": 11,
       "value": "\"faceImage\""
     },
     {
-      "filePath": "\/Users\/CK9GWYCWPH\/Desktop\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
+      "filePath": "\/Users\/CK9GWYCWPH\/actions-runner-ekyc\/_work\/clova-eyed\/clova-eyed\/platforms\/ios\/ClovaEyeD\/ClovaEyeD\/Target\/Ncp\/Api\/Face\/NcpCompareRequest.swift",
       "kind": "StringLiteral",
       "offset": 412,
       "length": 5,

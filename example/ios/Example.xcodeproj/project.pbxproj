@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		001AA9C32A7113F400B51728 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001AA9C22A7113F400B51728 /* AppDelegate.swift */; };
+		B6B648862E713339006847A1 /* NcpEkycApiManager.Document+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B648852E713336006847A1 /* NcpEkycApiManager.Document+Ext.swift */; };
 		CE03E8AD2B0D97D0002F1D13 /* TextInfoEditTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE03E8AC2B0D97D0002F1D13 /* TextInfoEditTableViewCell.swift */; };
 		CE0B51C12AD656850057498D /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B51C02AD656850057498D /* TextInputTableViewCell.swift */; };
 		CE0B522F2AD863F10057498D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0B522E2AD863F10057498D /* String.swift */; };
@@ -130,6 +131,7 @@
 /* Begin PBXFileReference section */
 		001AA9BF2A7113F400B51728 /* CLOVA eKYC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CLOVA eKYC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		001AA9C22A7113F400B51728 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B6B648852E713336006847A1 /* NcpEkycApiManager.Document+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NcpEkycApiManager.Document+Ext.swift"; sourceTree = "<group>"; };
 		CE03E8AC2B0D97D0002F1D13 /* TextInfoEditTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInfoEditTableViewCell.swift; sourceTree = "<group>"; };
 		CE0B51C02AD656850057498D /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
 		CE0B522E2AD863F10057498D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 		CE2737A02AE91715008FB534 /* ClovaEyeD */ = {
 			isa = PBXGroup;
 			children = (
+				B6B648852E713336006847A1 /* NcpEkycApiManager.Document+Ext.swift */,
 				CE2737A12AE9172E008FB534 /* IdCard.swift */,
 			);
 			path = ClovaEyeD;
@@ -790,6 +793,7 @@
 				CE71C2872AC2950F00CB199A /* eKYCCardBackViewController.swift in Sources */,
 				CECC71F62A91D7B8007B262E /* ClovaManager.swift in Sources */,
 				CE71C2C92AC5369E00CB199A /* HeaderTableViewCell_B.swift in Sources */,
+				B6B648862E713339006847A1 /* NcpEkycApiManager.Document+Ext.swift in Sources */,
 				CE5436952A78041A00D2434B /* CGRect.swift in Sources */,
 				CE4B36C72AAEFB31006110BE /* PermissionManager.swift in Sources */,
 				CEC1A6202AECF99000596BF0 /* DoneButton.swift in Sources */,
@@ -952,6 +956,10 @@
 				PRODUCT_NAME = "CLOVA eKYC";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "Clova iOS Developement";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -986,6 +994,10 @@
 				PRODUCT_NAME = "CLOVA eKYC";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "ClovaVisionSample InHouse PP";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

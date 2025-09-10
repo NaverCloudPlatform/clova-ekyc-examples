@@ -64,9 +64,10 @@ final class eKYCIcrCheckViewController: UIViewController {
     }(ProcessingView())
     
     init(cardImage: UIImage?, document: NcpEkycApiManager.Document) {
-        self.textInfo = document.textInfo
-        self.boundingBoxes = document.boundingBoxes
         self.document = document
+        self.document.appendSerialNumberFieldIfMissing()
+        self.textInfo = self.document.textInfo
+        self.boundingBoxes = self.document.boundingBoxes
         super.init(nibName: nil, bundle: nil)
         cardImageView.image = cardImage
     }
