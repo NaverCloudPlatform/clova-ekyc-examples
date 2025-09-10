@@ -8,6 +8,7 @@
   - [CLOVA ID Card Detector](#CLOVA-ID-Card-Detector)
   - [CLOVA Face Detector](#CLOVA-Face-Detector)
 - [Demo Scenario (Sample Code)](#Demo-Scenario-Sample-Code)
+- [Android 16KB Page Size Support](#Android-16KB-Page-Size-Support)
 - [Contact](#Contact)
 
 <br/>
@@ -74,6 +75,25 @@ The external libraries used by the CLOVA eKYC SDK are.
 
 - [Getting Started on Android](./docs/frameworks/start_AOS.md)
 - [Getting Started on iOS](./docs/frameworks/start_iOS.md)
+
+<br/>
+
+## Android 16KB Page Size Support
+
+The Android example project supports devices with 16KB memory page size (Android 15+, 64-bit).
+
+- Built with Android Gradle Plugin 8.5.0 and compile/target SDK 35
+- No legacy packaging flags enabled (no `useLegacyPackaging` or `android:extractNativeLibs`)
+
+Quick verification steps:
+1. Build artifacts
+   - `cd example/android`
+   - `./gradlew :ncp:bundleRelease` (AAB) or `./gradlew :ncp:assembleRelease` (APK)
+2. In Android Studio, use Analyze APK to inspect native libs:
+   - They should be “Stored (uncompressed)” and aligned appropriately (AGP 8.x ensures 16KB readiness)
+3. Optionally test on an Android 15 device (e.g., Pixel 8/9)
+
+Caution: Avoid enabling `jniLibs.useLegacyPackaging=true` or `android:extractNativeLibs="true"`, which may affect 16KB readiness.
 
 <br/>
 
