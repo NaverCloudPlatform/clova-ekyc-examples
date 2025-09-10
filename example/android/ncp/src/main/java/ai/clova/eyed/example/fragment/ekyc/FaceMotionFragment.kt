@@ -40,6 +40,7 @@ import android.widget.Button
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import ai.clova.eyed.face.data.ClovaPose
 
 
 class FaceMotionFragment : DefaultCameraFragment() {
@@ -64,6 +65,11 @@ class FaceMotionFragment : DefaultCameraFragment() {
         if (Configuration.isDebugMode) Configuration.selectedMotion else Configuration.ekycSelectedMotion
 
     private lateinit var dialog: Dialog
+
+    private var consecutiveFaceFrames: Int = 0
+    private var lastTrackingId: Int? = null
+    private var lastEyesOpen: Boolean? = null
+    private var lastBlinkFlag: Boolean = false
 
     private val apiManager = NcpEkycApiManager {
         faceInvokeUrl = Configuration.faceInvokeUrl
@@ -175,43 +181,95 @@ class FaceMotionFragment : DefaultCameraFragment() {
                 if (motionSpoofMaskImageview.width <= 0 || motionSpoofMaskImageview.height <= 0) return
 
                 if (motionDetectorState.get() == MotionDetectorState.START) {
-                    val faceList = faceDetector.detectFace(image).faces.filter {
+                    val detection = faceDetector.detectFace(image)
+                    val faceList = detection.faces.filter {
+                        val isBlinkOrMouth = when (selectedMotion) {
+                            Configuration.Motion.EYE_BLINK, Configuration.Motion.MOUTH_OPEN -> true
+                            else -> false
+                        }
+
+                        val boundingRectMargin = if (isBlinkOrMouth) 0 else 60
+
                         val scaledBoundingBoxMaskRect =
-                            image.rect(layout, motionSpoofBoundingBoxImageview, 60)
+                            image.rect(layout, motionSpoofBoundingBoxImageview, boundingRectMargin)
                         val scaledMaskRect = image.rect(layout, motionSpoofMaskImageview)
 
                         val boundingBoxArea = it.boundingBox.width() * it.boundingBox.height()
                         val maskArea = scaledMaskRect.width() * scaledMaskRect.height()
 
+                        val maskCenterY = scaledMaskRect.top + (scaledMaskRect.height() / 2)
+                        val faceCenterY = it.boundingBox.top + (it.boundingBox.height() / 2)
+
+                        val sizeThreshold = if (isBlinkOrMouth) 0.2f else 0.1f
+
+                        val poseCondition = if (isBlinkOrMouth) {
+                            it.pose == ClovaPose.FRONT
+                        } else {
+                            true
+                        }
+
+                        val yCondition = if (isBlinkOrMouth) {
+                            faceCenterY > maskCenterY
+                        } else {
+                            true
+                        }
+
                         var similarity = 1f
                         val frontFace = Configuration.faceScanResult?.face
-                        frontFace?.let { frontFace ->
-                            similarity = ClovaFaceDetector.getSimilarity(frontFace, it)
+                        frontFace?.let { refFace ->
+                            similarity = ClovaFaceDetector.getSimilarity(refFace, it)
                         }
 
-                        scaledBoundingBoxMaskRect.contains(it.boundingBox) &&
-                                !it.occlusions.noseOccluded &&
-                                boundingBoxArea >= maskArea * 0.2 &&
-                                similarity >= Configuration.edgeSimilarityThreshold
+                        val boxCondition = scaledBoundingBoxMaskRect.contains(it.boundingBox)
+                        val sizeCondition = boundingBoxArea >= maskArea * sizeThreshold
+                        val occlusionCondition = !it.occlusions.noseOccluded && !it.occlusions.mouthOccluded
+                        val similarityCondition = similarity >= Configuration.edgeSimilarityThreshold
+                        boxCondition && poseCondition && yCondition && occlusionCondition && sizeCondition && similarityCondition
                     }
 
-                    val face = faceList.sortedWith { a, b ->
-                        when {
-                            a.boundingBox.width() * a.boundingBox.height() < b.boundingBox.width() * b.boundingBox.height() -> 1
-                            a.boundingBox.width() * a.boundingBox.height() > b.boundingBox.width() * b.boundingBox.height() -> -1
-                            else -> 0
+                    val face = if (faceList.size == 1) faceList.first() else null
+
+                    if (face != null) {
+                        if (lastTrackingId == face.trackingId) {
+                            consecutiveFaceFrames += 1
+                        } else {
+                            consecutiveFaceFrames = 1
+                            lastEyesOpen = null
                         }
-                    }.firstOrNull()
+                        lastTrackingId = face.trackingId
+                        if (consecutiveFaceFrames < 3) {
+                            lastBlinkFlag = false
+                        }
+                    } else {
+                        consecutiveFaceFrames = 0
+                        lastTrackingId = null
+                        lastEyesOpen = null
+                        lastBlinkFlag = false
+                    }
 
                     face?.let {
                         faceDetected.set(true)
                         when (selectedMotion) {
                             Configuration.Motion.EYE_BLINK -> {
-                                if (face.motions.eyeBlink) {
-                                    motionPreviewImage =
-                                        image.crop(layout, layout).getBitmap()
+                                val nowBlink = face.motions.eyeBlink
+                                val risingEdgeBlink = (!lastBlinkFlag && nowBlink)
+
+                                val leftState = face.leftEye.state.toString()
+                                val rightState = face.rightEye.state.toString()
+
+                                val eyesOpenNow = (leftState == "OPEN" && rightState == "OPEN")
+                                val eyesClosedNow = (leftState == "CLOSE" && rightState == "CLOSE")
+                                val openToClosedEdge = (lastEyesOpen == true && eyesClosedNow)
+
+                                val shouldTrustEyeBlink = (risingEdgeBlink || openToClosedEdge) && consecutiveFaceFrames >= 3
+
+                                if (shouldTrustEyeBlink) {
+                                    motionPreviewImage = image.crop(layout, layout).getBitmap()
                                     shoot()
                                 }
+
+                                lastBlinkFlag = nowBlink
+                                lastEyesOpen = eyesOpenNow
                             }
 
                             Configuration.Motion.MOUTH_OPEN -> {
@@ -303,6 +361,11 @@ class FaceMotionFragment : DefaultCameraFragment() {
 
         binding.motionPreviewLayer.isVisible = false
         binding.motionLoadingLayer.isVisible = false
+
+        consecutiveFaceFrames = 0
+        lastTrackingId = null
+        lastEyesOpen = null
+        lastBlinkFlag = false
 
         initMotionUI()
     }
