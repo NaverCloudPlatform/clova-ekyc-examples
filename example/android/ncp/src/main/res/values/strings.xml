@@ -219,4 +219,7 @@
 	<string name="description_card_mask_rotate">Mask ImageView Rotate</string>
 	<string name="description_card_capture">Capture</string>
 	<string name="description_card_result_image">Result Image</string>
+
+	<!-- Others -->
+	<string name="id_scan_icr_serial_hint">serialNum</string>
 </resources>

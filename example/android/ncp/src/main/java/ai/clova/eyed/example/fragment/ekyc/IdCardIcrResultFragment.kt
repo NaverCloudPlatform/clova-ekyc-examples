@@ -99,15 +99,19 @@ class IdCardIcrResultFragment : Fragment() {
             idScanIcrHomeButton.setOnClickListener { button ->
                 val inputManager =
                     requireActivity().getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-                inputManager.hideSoftInputFromWindow(
-                    requireActivity().currentFocus!!.windowToken,
-                    InputMethodManager.HIDE_NOT_ALWAYS
-                )
+                val token = button.windowToken ?: requireActivity().currentFocus?.windowToken
+                token?.let {
+                    inputManager.hideSoftInputFromWindow(
+                        it,
+                        InputMethodManager.HIDE_NOT_ALWAYS
+                    )
+                }
 
                 val adapter = idScanIcrRecyclerview.adapter as IdCardIcrAdapter
+
                 val itemList = adapter.getAdapterItem()
 
-                itemList.forEach {
+				itemList.forEach {
                     arrayOf(
                         Configuration.documentResult?.result?.idCard?.result?.ic,
                         Configuration.documentResult?.result?.idCard?.result?.dl,
@@ -124,6 +128,21 @@ class IdCardIcrResultFragment : Fragment() {
                     }
                 }
 
+				// Embed serial number into data object instead of additional parameters
+				adapter.getSerialNumber()?.trim()?.takeIf { it.isNotEmpty() }?.let { serial ->
+					val result = Configuration.documentResult?.result
+					val target = when (result?.inferDetailType) {
+						"IC" -> result.idCard.result.ic
+						"DL" -> result.idCard.result.dl
+						"PP" -> result.idCard.result.pp
+						"AC" -> result.idCard.result.ac
+						else -> null
+					}
+					@Suppress("UNCHECKED_CAST")
+					(target as? MutableMap<String, ArrayList<DocumentResult.Document.BaseObject>>)
+						?.put("serialNum", arrayListOf(DocumentResult.Document.BaseObject(serial)))
+				}
+
                 runOnUiThread {
                     idScanIcrResultLoadingLayer.isVisible = true
                     idScanIcrResultLoadingAnimation.apply {
@@ -137,12 +156,12 @@ class IdCardIcrResultFragment : Fragment() {
                     }
                 }
 
-                GlobalScope.launch(Dispatchers.IO) {
-                    Configuration.documentResult?.let {
-                        Configuration.verifyResult = apiManager.verify(
-                            documentResult = it
-                        )
-                    }
+				GlobalScope.launch(Dispatchers.IO) {
+					Configuration.documentResult?.let {
+						Configuration.verifyResult = apiManager.verify(
+							documentResult = it
+						)
+					}
                     runOnUiThread {
                         if (Configuration.verifyResult?.apiError?.code.equals("0022")) {
                             idScanIcrResultLoadingAnimation.isVisible = false
@@ -163,7 +182,7 @@ class IdCardIcrResultFragment : Fragment() {
             Configuration.documentResult?.let { icrResult ->
                 when (icrResult.meta) {
                     Meta.SUCCESS -> {
-                        val adapter = IdCardIcrAdapter().apply {
+                        val adapter = IdCardIcrAdapter(this@IdCardIcrResultFragment.requireContext()).apply {
                             setAdapterItem(icrResult)
                         }
                         idScanIcrRecyclerview.adapter = adapter
